@@ -1,0 +1,64 @@
+
+COMMAND ['install', '-r', '/workspace/scratch/38a00e590406/OpenNote/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk']
+Performing Streamed Install
+Success
+
+EXIT 0
+
+COMMAND ['shell', 'am', 'instrument', '-w', '-r', '-e', 'class', 'cn.jiang.opennote.EditorUiTest', '-e', 'captureEditor', 'true', 'cn.jiang.opennote.preview.test/androidx.test.runner.AndroidJUnitRunner']
+INSTRUMENTATION_STATUS: class=cn.jiang.opennote.EditorUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+cn.jiang.opennote.EditorUiTest:
+INSTRUMENTATION_STATUS: test=editorModulesCollapseAndPersistentPenBoxSurvivesRecreation
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: opennote_systemui_anr_handled=1
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: opennote_systemui_anr_handled=2
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: class=cn.jiang.opennote.EditorUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: System UI repeatedly failed on this AVD
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.EditorUiTest.find(EditorUiTest.kt:32)
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:47)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:51)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:67)
+
+INSTRUMENTATION_STATUS: stream=
+Error in editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest):
+java.lang.AssertionError: System UI repeatedly failed on this AVD
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.EditorUiTest.find(EditorUiTest.kt:32)
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:47)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:51)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:67)
+
+INSTRUMENTATION_STATUS: test=editorModulesCollapseAndPersistentPenBoxSurvivesRecreation
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 40.861
+There was 1 failure:
+1) editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest)
+java.lang.AssertionError: System UI repeatedly failed on this AVD
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.EditorUiTest.find(EditorUiTest.kt:32)
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:47)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:51)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:67)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
+
+EXIT 0

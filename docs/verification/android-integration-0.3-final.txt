@@ -1,0 +1,49 @@
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+Waiting for boot: adb: device 'emulator-5556' not found
+Waiting for boot: adb: device offline
+Waiting for boot: adb: device offline
+Waiting for boot: adb: device offline
+Waiting for boot: 
+Waiting for boot: 
+Waiting for boot: 
+Waiting for boot: 
+BOOT_COMPLETED
+
+Package com.android.bluetooth new state: disabled-user
+
+Package com.android.ons new state: disabled-user
+
+Package com.android.phone new state: disabled-user
+
+Package com.android.messaging new state: disabled-user
+
+
+
+
+Performing Streamed Install
+Success
+
+Performing Streamed Install
+Success
+
+Success
+
+
+cn.jiang.opennote.BackupRestoreTest:...
+cn.jiang.opennote.EditorUiTest:s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+INSTRUMENTATION_STATUS: opennote_editor_png=[actual screenshot saved separately]
+INSTRUMENTATION_STATUS_CODE: 2
+.
+cn.jiang.opennote.PendingFlushTest:.
+cn.jiang.opennote.ReaderInputTest:..
+cn.jiang.opennote.VerticalSliceTest:..
+
+Time: 250.56
+
+OK (9 tests)
+
+
+

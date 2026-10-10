@@ -1,0 +1,13 @@
+Android13 AOSP x86_64 / Emulator37.2.12 / TCG（无KVM）
+两份APK安装成功。
+
+cn.jiang.opennote.BackupRestoreTest:...
+cn.jiang.opennote.ReaderInputTest:.
+cn.jiang.opennote.VerticalSliceTest:..
+
+Time: 74.641
+OK (6 tests)
+
+MainActivity启动命令已执行：Starting: Intent { cmp=cn.jiang.opennote/.MainActivity }
+截图被系统 Bluetooth keeps stopping 弹窗遮挡；截图不能用于主页视觉验收，未交付为应用截图。
+系统进程另有ANR（systemui/phone/inputmethod/media/bluetooth）与com.android.messaging崩溃。运行环境不稳定，测试结论只限上述6项仪器用例；不能用于帧率/延迟/日常体验结论。

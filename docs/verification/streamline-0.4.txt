@@ -1,0 +1,6 @@
+PASS input immutability, recurrence and pressure metadata
+PASS alternating jitter reduction (0.7392269879299174)
+PASS subpixel short stroke retention
+PASS 10000-sample incremental/replay equality
+PASS whitespace preserves rendering mode
+5 checks passed

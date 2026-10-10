@@ -1,0 +1,23 @@
+
+COMMAND ['shell', 'input', 'tap', '415', '368']
+
+EXIT 0
+
+COMMAND ['shell', 'am', 'start', '-W', '-n', 'cn.jiang.opennote.preview/cn.jiang.opennote.MainActivity']
+Starting: Intent { cmp=cn.jiang.opennote.preview/cn.jiang.opennote.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: cn.jiang.opennote.preview/cn.jiang.opennote.MainActivity
+TotalTime: 19646
+WaitTime: 20880
+Complete
+
+EXIT 0
+
+COMMAND ['shell', 'screencap', '-p', '/sdcard/ui-recovered.png']
+
+EXIT 0
+
+COMMAND ['shell', 'base64', '/sdcard/ui-recovered.png']
+[image bytes]
+EXIT 0

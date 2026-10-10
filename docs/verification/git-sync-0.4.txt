@@ -1,0 +1,6 @@
+Canonical remote: https://github.com/Ryon2333/openNote.git
+Implementation commit: 61f7525
+Android verification and spacing commit: 717d5ea
+Both push attempts exited 128:
+fatal: could not read Username for https://github.com: terminal prompts disabled
+GitHub plugin checked: available, not installed/connected. No successful remote push or remote CI run is claimed.

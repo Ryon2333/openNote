@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.jiang.opennote.NotebookCommandTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-09T23:36:19" hostname="4c57b54c519f" time="0.008">
+  <properties/>
+  <testcase name="pageScopedUndoAndRedoKeepOtherPagesUntouched" classname="cn.jiang.opennote.NotebookCommandTest" time="0.006"/>
+  <testcase name="cardAndInkMoveTogetherAndUndoRestoresExactCoordinates" classname="cn.jiang.opennote.NotebookCommandTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

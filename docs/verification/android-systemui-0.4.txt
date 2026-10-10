@@ -1,0 +1,14 @@
+
+COMMAND ['shell', 'dumpsys', 'activity', 'lastanr']
+ACTIVITY MANAGER LAST ANR (dumpsys activity lastanr)
+  <no ANR has occurred since boot>
+
+EXIT 0
+
+COMMAND ['shell', 'screencap', '-p', '/sdcard/ui-anr.png']
+
+EXIT 0
+
+COMMAND ['shell', 'base64', '/sdcard/ui-anr.png']
+[image bytes]
+EXIT 0

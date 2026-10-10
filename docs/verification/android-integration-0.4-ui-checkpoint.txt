@@ -1,0 +1,40 @@
+
+COMMAND ['install', '-r', '/workspace/scratch/38a00e590406/OpenNote/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk']
+Performing Streamed Install
+Success
+
+EXIT 0
+
+COMMAND ['shell', 'am', 'instrument', '-w', '-r', '-e', 'class', 'cn.jiang.opennote.EditorUiTest', '-e', 'captureEditor', 'true', 'cn.jiang.opennote.preview.test/androidx.test.runner.AndroidJUnitRunner']
+INSTRUMENTATION_STATUS: class=cn.jiang.opennote.EditorUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+cn.jiang.opennote.EditorUiTest:
+INSTRUMENTATION_STATUS: test=editorModulesCollapseAndPersistentPenBoxSurvivesRecreation
+INSTRUMENTATION_STATUS_CODE: 1
+s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+INSTRUMENTATION_STATUS: screenshot=[captured]
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: screenshot=[captured]
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: class=cn.jiang.opennote.EditorUiTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=editorModulesCollapseAndPersistentPenBoxSurvivesRecreation
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 108.193
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
+EXIT 0

@@ -1,0 +1,747 @@
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+Booting 0
+Booting 10
+Booting 20
+Booting 30
+Booting 40
+Booting 50
+Booting 60
+Booting 70
+Booting 80
+Booting 90
+Booting 100
+Booting 110
+BOOT_COMPLETED
+Performing Streamed Install
+Success
+
+Performing Streamed Install
+Success
+
+Success
+
+
+cn.jiang.opennote.BackupRestoreTest:...
+cn.jiang.opennote.EditorUiTest:
+Error in editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest):
+java.lang.AssertionError: Expected editor control was not visible; active root=cn.jiang.opennote.preview
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:27)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:29)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:45)
+
+cn.jiang.opennote.PendingFlushTest:.
+cn.jiang.opennote.ReaderInputTest:.
+Error in palmCannotInterruptStylusAndCanceledInkLeavesNoHistory(cn.jiang.opennote.ReaderInputTest):
+java.lang.AssertionError: Pressure must change rendered thickness
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.ReaderInputTest.palmCannotInterruptStylusAndCanceledInkLeavesNoHistory$lambda$18(ReaderInputTest.kt:118)
+	at cn.jiang.opennote.ReaderInputTest.$r8$lambda$HaLCMfgMCwRcY2xtnHPdbAtFJxo(Unknown Source:0)
+	at cn.jiang.opennote.ReaderInputTest$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2379)
+	at android.os.Handler.handleCallback(Handler.java:942)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:201)
+	at android.os.Looper.loop(Looper.java:288)
+	at android.app.ActivityThread.main(ActivityThread.java:7872)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+.
+cn.jiang.opennote.VerticalSliceTest:..
+
+Time: 240.335
+There were 2 failures:
+1) editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest)
+java.lang.AssertionError: Expected editor control was not visible; active root=cn.jiang.opennote.preview
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:27)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:29)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:45)
+2) palmCannotInterruptStylusAndCanceledInkLeavesNoHistory(cn.jiang.opennote.ReaderInputTest)
+java.lang.AssertionError: Pressure must change rendered thickness
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.ReaderInputTest.palmCannotInterruptStylusAndCanceledInkLeavesNoHistory$lambda$18(ReaderInputTest.kt:118)
+	at cn.jiang.opennote.ReaderInputTest.$r8$lambda$HaLCMfgMCwRcY2xtnHPdbAtFJxo(Unknown Source:0)
+	at cn.jiang.opennote.ReaderInputTest$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2379)
+	at android.os.Handler.handleCallback(Handler.java:942)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:201)
+	at android.os.Looper.loop(Looper.java:288)
+	at android.app.ActivityThread.main(ActivityThread.java:7872)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+
+FAILURES!!!
+Tests run: 10,  Failures: 2
+
+
+
+--------- beginning of crash
+10-09 22:31:00.517   599   599 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+10-09 22:31:00.517   599   599 E AndroidRuntime: java.lang.IllegalStateException: Lost network stack. This is not the root cause of any issue, it is a side effect of a crash that happened earlier. Earlier logs should point to the actual issue.
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.net.ConnectivityModuleConnector.maybeCrashWithTerribleFailure(ConnectivityModuleConnector.java:338)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.net.ConnectivityModuleConnector.-$$Nest$mmaybeCrashWithTerribleFailure(Unknown Source:0)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.net.ConnectivityModuleConnector$ModuleServiceConnection.onServiceDisconnected(ConnectivityModuleConnector.java:281)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher.doDeath(LoadedApk.java:2208)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:2223)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at com.android.server.SystemServer.run(SystemServer.java:966)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at com.android.server.SystemServer.main(SystemServer.java:651)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:31:00.517   599   599 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-09 22:31:03.144  1237  1280 E AndroidRuntime: FATAL EXCEPTION: launcher-loader
+10-09 22:31:03.144  1237  1280 E AndroidRuntime: Process: com.android.launcher3, PID: 1237
+10-09 22:31:03.144  1237  1280 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:31:03.246   905   986 E AndroidRuntime: FATAL EXCEPTION: ImageWallpaper
+10-09 22:31:03.246   905   986 E AndroidRuntime: Process: com.android.systemui, PID: 905
+10-09 22:31:03.246   905   986 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:31:03.614  1864  1864 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:31:03.614  1864  1864 E AndroidRuntime: Process: com.android.networkstack.process, PID: 1864
+10-09 22:31:03.614  1864  1864 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:31:03.681  1968  2001 E AndroidRuntime: FATAL EXCEPTION: Worker-1
+10-09 22:31:03.681  1968  2001 E AndroidRuntime: Process: android.process.acore, PID: 1968
+10-09 22:31:03.681  1968  2001 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:31:03.816  1960  1960 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:31:03.816  1960  1960 E AndroidRuntime: Process: com.android.providers.media.module, PID: 1960
+10-09 22:31:03.816  1960  1960 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:31:03.824   906  1746 E AndroidRuntime: FATAL EXCEPTION: RoleControllerService
+10-09 22:31:03.824   906  1746 E AndroidRuntime: Process: com.android.permissioncontroller, PID: 906
+10-09 22:31:03.824   906  1746 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: Process: com.android.phone, PID: 2444
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:35:02.779  2444  2444 E AndroidRuntime: 
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: Process: com.android.phone, PID: 2929
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:37:06.484  2929  2929 E AndroidRuntime: 
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: Process: com.android.phone, PID: 3580
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:38:21.672  3580  3580 E AndroidRuntime: 
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: Process: com.android.phone, PID: 3879
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:39:23.781  3879  3879 E AndroidRuntime: 
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: Process: com.android.phone, PID: 4018
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:39:44.225  4018  4018 E AndroidRuntime: 
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: Process: com.android.phone, PID: 4131
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:39:59.662  4131  4131 E AndroidRuntime: 
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: Process: com.android.phone, PID: 4210
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:40:18.541  4210  4210 E AndroidRuntime: 
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: Process: com.android.phone, PID: 4280
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:40:43.095  4280  4280 E AndroidRuntime: 
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: Process: com.android.phone, PID: 4323
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:40:53.931  4323  4323 E AndroidRuntime: 
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: Process: com.android.phone, PID: 4366
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:03.245  4366  4366 E AndroidRuntime: 
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: Process: com.android.phone, PID: 4408
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:13.100  4408  4408 E AndroidRuntime: 
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: Process: com.android.phone, PID: 4449
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:22.430  4449  4449 E AndroidRuntime: 
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: Process: com.android.phone, PID: 4491
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:32.757  4491  4491 E AndroidRuntime: 
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: Process: com.android.phone, PID: 4533
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:40.965  4533  4533 E AndroidRuntime: 
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: Process: com.android.phone, PID: 4576
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:49.813  4576  4576 E AndroidRuntime: 
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: Process: com.android.phone, PID: 4618
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:41:59.269  4618  4618 E AndroidRuntime: 
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: FATAL EXCEPTION: main
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: Process: com.android.phone, PID: 4661
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: java.lang.SecurityException: PhoneAccount connection service requires BIND_TELECOM_CONNECTION_SERVICE permission.
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3011)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub$Proxy.registerPhoneAccount(ITelecomService.java:1738)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.telecom.TelecomManager.registerPhoneAccount(TelecomManager.java:1503)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.registerPstnPhoneAccount(TelecomAccountRegistry.java:277)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$AccountEntry.<init>(TelecomAccountRegistry.java:151)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.setupAccounts(TelecomAccountRegistry.java:1575)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry.-$$Nest$msetupAccounts(Unknown Source:0)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.services.telephony.TelecomAccountRegistry$1.onSubscriptionsChanged(TelecomAccountRegistry.java:1070)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1.lambda$onSubscriptionsChanged$0(TelephonyRegistryManager.java:125)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.telephony.TelephonyRegistryManager$1$$ExternalSyntheticLambda0.run(Unknown Source:2)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:288)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7872)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.server.telecom.PhoneAccountRegistrar.registerPhoneAccount(PhoneAccountRegistrar.java:859)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.server.telecom.TelecomServiceImpl$1.registerPhoneAccount(TelecomServiceImpl.java:604)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at com.android.internal.telecom.ITelecomService$Stub.onTransact(ITelecomService.java:857)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-09 22:42:08.642  4661  4661 E AndroidRuntime: 
+
+Starting: Intent { cmp=cn.jiang.opennote.preview/cn.jiang.opennote.MainActivity }
+
+
+
+Usage: uiautomator <subcommand> [options]
+
+Available subcommands:
+
+help: displays help message
+
+runtest: executes UI automation tests
+    runtest <class spec> [options]
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+      <JARS>: a list of jar files containing test classes and dependencies. If
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+        absolute path if the file is elsewhere. Multiple files can be
+        specified, separated by space.
+      <CLASSES>: a list of test class names to run, separated by comma. To
+        a single method, use TestClass#testMethod format. The -e or -c option
+        may be repeated. This option is not required and if not provided then
+        all the tests in provided jars will be run automatically.
+    options:
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+               is terminated, e.g. USB is disconnected.
+      -e debug [true|false]: wait for debugger to connect before starting.
+      -e runner [CLASS]: use specified test runner class instead. If
+        unspecified, framework default runner will be used.
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+        May be repeated.
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+dump: creates an XML dump of current UI hierarchy
+    dump [--verbose][file]
+      [--compressed]: dumps compressed layout information.
+      [file]: the location where the dumped XML should be stored, default is
+      /sdcard/window_dump.xml
+
+events: prints out accessibility events until terminated
+
+
+
+
+[UI diagnostic image bytes omitted]
+QmCC
+
+Performing Streamed Install
+Success
+
+
+cn.jiang.opennote.ReaderInputTest:.INSTRUMENTATION_STATUS: screenshot=[diagnostic saved separately]
+INSTRUMENTATION_STATUS_CODE: 2
+
+Error in palmCannotInterruptStylusAndCanceledInkLeavesNoHistory(cn.jiang.opennote.ReaderInputTest):
+java.lang.AssertionError: Pressure must change rendered thickness: light=4 heavy=4 points=100.0,100.0,0.1, 147.9166717529297,100.0,0.9, 200.0,100.0,0.9
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.ReaderInputTest.palmCannotInterruptStylusAndCanceledInkLeavesNoHistory$lambda$19(ReaderInputTest.kt:123)
+	at cn.jiang.opennote.ReaderInputTest.$r8$lambda$nmnH3bbWseU1TzWa7w69sXRNZXQ(Unknown Source:0)
+	at cn.jiang.opennote.ReaderInputTest$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2379)
+	at android.os.Handler.handleCallback(Handler.java:942)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:201)
+	at android.os.Looper.loop(Looper.java:288)
+	at android.app.ActivityThread.main(ActivityThread.java:7872)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+.
+
+Time: 6.839
+There was 1 failure:
+1) palmCannotInterruptStylusAndCanceledInkLeavesNoHistory(cn.jiang.opennote.ReaderInputTest)
+java.lang.AssertionError: Pressure must change rendered thickness: light=4 heavy=4 points=100.0,100.0,0.1, 147.9166717529297,100.0,0.9, 200.0,100.0,0.9
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at cn.jiang.opennote.ReaderInputTest.palmCannotInterruptStylusAndCanceledInkLeavesNoHistory$lambda$19(ReaderInputTest.kt:123)
+	at cn.jiang.opennote.ReaderInputTest.$r8$lambda$nmnH3bbWseU1TzWa7w69sXRNZXQ(Unknown Source:0)
+	at cn.jiang.opennote.ReaderInputTest$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:2379)
+	at android.os.Handler.handleCallback(Handler.java:942)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:201)
+	at android.os.Looper.loop(Looper.java:288)
+	at android.app.ActivityThread.main(ActivityThread.java:7872)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+
+FAILURES!!!
+Tests run: 3,  Failures: 1
+
+
+

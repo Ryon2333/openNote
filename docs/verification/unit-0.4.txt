@@ -1,0 +1,9 @@
+cn.jiang.opennote.BackupArchiveTest: tests=8 failures=0 errors=0
+cn.jiang.opennote.InkTest: tests=4 failures=0 errors=0
+cn.jiang.opennote.NotebookCommandTest: tests=4 failures=0 errors=0
+cn.jiang.opennote.PageLayoutTest: tests=5 failures=0 errors=0
+cn.jiang.opennote.PressureInkTest: tests=1 failures=0 errors=0
+cn.jiang.opennote.RasterPdfTest: tests=1 failures=0 errors=0
+cn.jiang.opennote.StrokeCodecTest: tests=3 failures=0 errors=0
+cn.jiang.opennote.StrokeStreamlineTest: tests=1 failures=0 errors=0
+27 tests passed

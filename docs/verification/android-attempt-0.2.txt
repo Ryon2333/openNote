@@ -1,0 +1,11 @@
+本轮 Android 运行尝试：Emulator 37.2.12-16428233、Android13 AOSP x86_64；无/dev/kvm，TCG软件模拟。
+首次尝试处于ADB离线状态。随后同进程启动ADB+模拟器，仍未达到可安装状态。
+平板AVD + SwiftShader尝试：Emulator exited -11 (SIGSEGV)。
+关闭GPU并单CPU重试：Emulator exited -11 (SIGSEGV)。
+宿主日志摘录：
+TCG does not support requested feature: CPUID.01H:ECX.avx / f16c
+WARNING: cannot unmap ptr as it is in the protected range
+ERROR: detected a hanging thread QEMU2 CPU0 / CPU1 / main loop
+ptrace: Operation not permitted
+
+以上只是观测，根因未确认。应用未安装/启动，实际执行Android用例0；不能归因为应用运行故障，也不能视为通过。

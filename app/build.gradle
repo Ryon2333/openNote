@@ -1,0 +1,31 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+}
+android {
+    namespace 'cn.jiang.opennote'
+    compileSdk 35
+    buildToolsVersion "35.0.0"
+    defaultConfig { applicationId 'cn.jiang.opennote'; minSdk 33; targetSdk 35; versionCode 4; versionName '0.4.0-dev'; testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner' }
+    signingConfigs { debug { if (System.getenv("OPENNOTE_DEBUG_KEYSTORE")) storeFile file(System.getenv("OPENNOTE_DEBUG_KEYSTORE")) } }
+    buildTypes { debug { applicationIdSuffix ".preview" } }
+    buildFeatures { compose true }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    kotlinOptions { jvmTarget = '17' }
+    testOptions { unitTests.returnDefaultValues = true }
+    sourceSets { test.java.srcDir "../tools" }
+}
+dependencies {
+    implementation libs.activity.compose
+    implementation platform(libs.compose.bom)
+    implementation libs.compose.ui
+    implementation libs.compose.foundation
+    implementation libs.compose.material3
+    testImplementation libs.junit
+    testImplementation libs.json
+    androidTestImplementation libs.test.runner
+    androidTestImplementation libs.test.core
+    androidTestImplementation libs.test.ext 
+}
+dependencyLocking { lockAllConfigurations() }

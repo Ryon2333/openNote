@@ -1,0 +1,1668 @@
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+Waiting for boot: adb: device 'emulator-5556' not found
+Waiting for boot: adb: device offline
+Waiting for boot: adb: device offline
+Waiting for boot: adb: device offline
+Waiting for boot: 
+Waiting for boot: 
+Waiting for boot: 
+Waiting for boot: 
+Waiting for boot: 
+BOOT_COMPLETED
+
+Package com.android.bluetooth new state: disabled-user
+
+Performing Streamed Install
+Success
+
+Performing Streamed Install
+Success
+
+
+cn.jiang.opennote.BackupRestoreTest:...
+cn.jiang.opennote.EditorUiTest:
+Error in editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest):
+java.lang.AssertionError: Expected editor control was not visible
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:25)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:27)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:39)
+
+cn.jiang.opennote.ReaderInputTest:..
+cn.jiang.opennote.VerticalSliceTest:..
+
+Time: 219.114
+There was 1 failure:
+1) editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(cn.jiang.opennote.EditorUiTest)
+java.lang.AssertionError: Expected editor control was not visible
+	at cn.jiang.opennote.EditorUiTest.waitFor(EditorUiTest.kt:25)
+	at cn.jiang.opennote.EditorUiTest.text(EditorUiTest.kt:27)
+	at cn.jiang.opennote.EditorUiTest.editorModulesCollapseAndPersistentPenBoxSurvivesRecreation(EditorUiTest.kt:39)
+
+FAILURES!!!
+Tests run: 8,  Failures: 1
+
+
+
+Starting: Intent { cmp=cn.jiang.opennote/.MainActivity }
+
+ERROR: null root node returned by UiTestAutomationBridge.
+
+cat: /sdcard/window.xml: No such file or directory
+
+--------- beginning of crash
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #7
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: Process: com.android.messaging, PID: 2320
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.String java.lang.CharSequence.toString()' on a null object reference
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh.refreshSelfParticipantList(Unknown Source:141)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh.refreshParticipants(Unknown Source:61)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh$2.run(Unknown Source:1)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1012)
+
+--------- beginning of system
+10-10 07:08:26.929   584  1272 E ActivityManager: Aborting stack trace dump (current native pid=404); deadline exceeded.
+10-10 07:08:31.984   584  1272 E ActivityManager: ANR in com.android.systemui
+10-10 07:08:31.984   584  1272 E ActivityManager: PID: 868
+10-10 07:08:31.984   584  1272 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:08:31.984   584  1272 E ActivityManager: ErrorId: fb0787f7-99bd-4a4a-870f-979afb83577a
+10-10 07:08:31.984   584  1272 E ActivityManager: Frozen: false
+10-10 07:08:31.984   584  1272 E ActivityManager: Load: 8.23 / 4.53 / 2.03
+10-10 07:08:31.984   584  1272 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:08:31.984   584  1272 E ActivityManager: some avg10=0.55 avg60=0.48 avg300=0.16 total=725597
+10-10 07:08:31.984   584  1272 E ActivityManager: full avg10=0.30 avg60=0.23 avg300=0.07 total=376998
+10-10 07:08:31.984   584  1272 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:08:31.984   584  1272 E ActivityManager: 
+10-10 07:08:31.984   584  1272 E ActivityManager: CPU usage from 1ms to 35169ms later (2026-10-10 07:07:51.820 to 2026-10-10 07:08:26.988):
+10-10 07:08:31.984   584  1272 E ActivityManager:   64% 584/system_server: 25% user + 39% kernel / faults: 12395 minor 14 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   16% 868/com.android.systemui: 6.7% user + 10% kernel / faults: 7383 minor 60 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   10% 1087/com.android.phone: 4.7% user + 6% kernel / faults: 2966 minor 7 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   3.5% 466/installd: 0.8% user + 2.6% kernel / faults: 57 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   6.8% 869/com.android.permissioncontroller: 2.6% user + 4.2% kernel / faults: 1003 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   5.3% 1/init: 0.7% user + 4.6% kernel / faults: 674 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   4.5% 388/android.hardware.sensors@2.1-service.multihal: 1.3% user + 3.2% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   3.4% 415/surfaceflinger: 1.5% user + 1.8% kernel / faults: 108 minor 3 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   3% 204/logd: 0.9% user + 2.1% kernel / faults: 113 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   2.1% 378/kworker/u4:6-kverityd: 0% user + 2.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   2% 382/android.hardware.graphics.composer@2.4-service: 0.5% user + 1.4% kernel / faults: 1 minor 1 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   2% 1025/com.android.networkstack.process: 0.7% user + 1.2% kernel / faults: 869 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.9% 1089/com.android.settings: 0.9% user + 0.9% kernel / faults: 576 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.8% 158/kworker/u4:3-events_unbound: 0% user + 1.8% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.6% 454/adbd: 0.4% user + 1.2% kernel / faults: 7404 minor 2 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.6% 459/logcat: 0.5% user + 1.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.5% 13/rcu_preempt: 0% user + 1.5% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.3% 104/kswapd0: 0% user + 1.3% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.2% 745/kworker/1:0-virtio_vsock: 0% user + 1.2% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   1.1% 362/statsd: 0.3% user + 0.8% kernel / faults: 129 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   1% 1066/com.android.se: 0.4% user + 0.5% kernel / faults: 892 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.8% 364/zygote64: 0.2% user + 0.6% kernel / faults: 246 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.7% 206/servicemanager: 0.3% user + 0.3% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.7% 258/jbd2/dm-32-8: 0% user + 0.7% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.7% 370/kworker/u4:5-kverityd: 0% user + 0.7% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.6% 1132/com.android.launcher3: 0.2% user + 0.4% kernel / faults: 289 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.2% 214/vold: 0% user + 0.1% kernel / faults: 97 minor 1 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.3% 472/libgoldfish-rild: 0.1% user + 0.1% kernel / faults: 8 minor 3 major
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.2% 205/lmkd: 0% user + 0.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 266/tombstoned: 0% user + 0% kernel / faults: 6 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.2% 7/kworker/u4:0-kverityd: 0% user + 0.2% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.2% 111/kworker/0:2-events: 0% user + 0.2% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 471/wificond: 0% user + 0% kernel / faults: 1 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.2% 24/ksoftirqd/1: 0% user + 0.2% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 12/ksoftirqd/0: 0% user + 0.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 207/hwservicemanager: 0.1% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 272/apexd: 0% user + 0.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 404/audioserver: 0% user + 0.1% kernel / faults: 86 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 363/netd: 0% user + 0.1% kernel / faults: 31 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 253/kworker/u5:1-blk_crypto_wq: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 326/kworker/u5:2-blk_crypto_wq: 0% user + 0.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 32/kcompactd0: 0% user + 0.1% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0.1% 227/keystore2: 0% user + 0.1% kernel / faults: 20 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 387/android.hardware.power.stats@1.0-service.mock: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 859/wpa_supplicant: 0% user + 0% kernel / faults: 8 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 16/rcu_exp_gp_kthr: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 160/init: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 213/qemu-props: 0% user + 0% kernel / faults: 1 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 226/android.system.suspend@1.0-service: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 368/android.hardware.bluetooth@1.1-service.btlinux: 0% user + 0% kernel
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 4 minor
+10-10 07:08:31.984   584  1272 E ActivityManager:   0% 457/traced: 0% user + 0% kernel / faults: 1 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 462/cameraserver: 0% user + 0% kernel / faults: 1 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 112/kworker/0:1H-kblockd: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 461/bt_vhci_forwarder: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0% 498/mdnsd: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:  +0% 1305/idmap2d: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:  +0% 1337/android.ext.services: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:  +0% 1353/com.android.deskclock: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:  +0% 1400/com.android.inputmethod.latin: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager: 96% TOTAL: 31% user + 59% kernel + 0% iowait + 4% irq + 2.2% softirq
+10-10 07:08:31.985   584  1272 E ActivityManager: CPU usage from 1029ms to 7302ms later (2026-10-10 07:07:52.848 to 2026-10-10 07:07:59.121):
+10-10 07:08:31.985   584  1272 E ActivityManager:   88% 584/system_server: 20% user + 68% kernel / faults: 325 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:     33% 1272/AnrConsumer: 3.3% user + 30% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     14% 959/binder:584_9: 7.5% user + 6.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     11% 596/HeapTaskDaemon: 1.6% user + 10% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     10% 600/binder:584_1: 3.3% user + 7.5% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     6.6% 1281/binder:584_D: 1.6% user + 5% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     2.5% 584/system_server: 0.8% user + 1.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     2.5% 802/WifiHandlerThre: 1.6% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 606/android.ui: 1.6% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 800/NetworkPolicy: 0.8% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 814/VcnManagementSe: 0% user + 1.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 1017/EmergencyAfford: 0% user + 1.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 621/batterystats-ha: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 632/PowerManagerSer: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 673/SensorService: 0.8% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 682/oregroundThread: 0.8% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 799/NetworkStats: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 833/ackgroundThread: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 918/binder:584_6: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   38% 868/com.android.systemui: 14% user + 24% kernel / faults: 461 minor 2 major
+10-10 07:08:31.985   584  1272 E ActivityManager:     28% 868/ndroid.systemui: 11% user + 16% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     11% 875/Jit thread pool: 2.9% user + 8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   34% 1087/com.android.phone: 13% user + 21% kernel / faults: 445 minor 1 major
+10-10 07:08:31.985   584  1272 E ActivityManager:     17% 1087/m.android.phone: 7.3% user + 9.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     4.8% 1098/HeapTaskDaemon: 1.6% user + 3.2% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     4% 1242/binder:1087_4: 1.6% user + 2.4% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     2.4% 1188/queued-work-loo: 0% user + 2.4% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 1116/binder:1087_1: 0% user + 1.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.6% 1251/binder:1087_5: 0% user + 1.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 1109/ReferenceQueueD: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.8% 1120/binder:1087_3: 0% user + 0.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:    +0% 1296/android.bg: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:    +0% 1297/TelecomAccountR: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:    +0% 1299/binder:1087_6: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:    +0% 1300/binder:1087_7: 0% user + 0% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   2.7% 1/init: 0.6% user + 2% kernel / faults: 2 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.7% 159/init: 0.3% user + 1.4% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.6% 1/init: 0.3% user + 0.3% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   9.1% 869/com.android.permissioncontroller: 5.3% user + 3.8% kernel / faults: 24 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:     9.1% 1278/RoleControllerS: 5.3% user + 3.8% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   1.7% 13/rcu_preempt: 0% user + 1.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   2.4% 204/logd: 0.9% user + 1.4% kernel / faults: 1 minor
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.4% 217/logd.writer: 0.4% user + 0.9% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.4% 479/logd.reader.per: 0% user + 0.4% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   3.6% 378/kworker/u4:6-events_unbound: 0% user + 3.6% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   3.7% 388/android.hardware.sensors@2.1-service.multihal: 0.7% user + 2.9% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     2.6% 417/sensors@2.1-ser: 0.3% user + 2.2% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.1% 418/sensors@2.1-ser: 0% user + 1.1% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.7% 104/kswapd0: 0% user + 0.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.7% 206/servicemanager: 0.4% user + 0.2% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   2.2% 472/libgoldfish-rild: 1.5% user + 0.7% kernel / faults: 3 minor 1 major
+10-10 07:08:31.985   584  1272 E ActivityManager:     1.5% 472/libgoldfish-ril: 0.7% user + 0.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.3% 12/ksoftirqd/0: 0% user + 0.3% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.5% 258/jbd2/dm-32-8: 0% user + 0.5% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.7% 382/android.hardware.graphics.composer@2.4-service: 0.3% user + 0.3% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.7% 420/display_0_vsync: 0% user + 0.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.1% 16/rcu_exp_gp_kthr: 0% user + 0.1% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.2% 272/apexd: 0% user + 0.2% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:     0.2% 272/apexd: 0% user + 0.2% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.3% 362/statsd: 0% user + 0.3% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.3% 370/kworker/u4:5-ext4-rsv-conversion: 0% user + 0.3% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.5% 459/logcat: 0% user + 0.5% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.7% 745/kworker/1:0-virtio_vsock: 0% user + 0.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager:   0.7% 1089/com.android.settings: 0% user + 0.7% kernel
+10-10 07:08:31.985   584  1272 E ActivityManager: 94% TOTAL: 25% user + 63% kernel + 3.5% irq + 2.1% softirq
+10-10 07:08:34.555   584  1272 E ActivityManager: ANR in com.android.phone
+10-10 07:08:34.555   584  1272 E ActivityManager: PID: 1087
+10-10 07:08:34.555   584  1272 E ActivityManager: Reason: executing service com.android.phone/.TelephonyDebugService
+10-10 07:08:34.555   584  1272 E ActivityManager: ErrorId: 253d545a-f20d-4aa7-90b8-5e18e1b3c91c
+10-10 07:08:34.555   584  1272 E ActivityManager: Frozen: false
+10-10 07:08:34.555   584  1272 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+10-10 07:08:34.555   584  1272 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:08:34.555   584  1272 E ActivityManager: some avg10=1.57 avg60=0.85 avg300=0.28 total=1235438
+10-10 07:08:34.555   584  1272 E ActivityManager: full avg10=0.67 avg60=0.38 avg300=0.12 total=632086
+10-10 07:08:34.555   584  1272 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:08:34.555   584  1272 E ActivityManager: 
+10-10 07:08:34.555   584  1272 E ActivityManager: CPU usage from 5397ms to -98ms ago (2026-10-10 07:08:26.988 to 2026-10-10 07:08:32.483):
+10-10 07:08:34.555   584  1272 E ActivityManager:   64% 584/system_server: 28% user + 35% kernel / faults: 1025 minor 5 major
+10-10 07:08:34.555   584  1272 E ActivityManager:   25% 466/installd: 4% user + 21% kernel / faults: 12 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   14% 868/com.android.systemui: 7.1% user + 7.7% kernel / faults: 377 minor 1 major
+10-10 07:08:34.555   584  1272 E ActivityManager:   12% 226/android.system.suspend@1.0-service: 3% user + 8.9% kernel / faults: 28 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   8.4% 1353/com.android.deskclock: 5% user + 3.3% kernel / faults: 196 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   8.6% 1400/com.android.inputmethod.latin: 3.4% user + 5.2% kernel / faults: 530 minor 10 major
+10-10 07:08:34.555   584  1272 E ActivityManager:   6% 1337/android.ext.services: 1.6% user + 4.3% kernel / faults: 202 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   3.5% 258/jbd2/dm-32-8: 0% user + 3.5% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   3.3% 388/android.hardware.sensors@2.1-service.multihal: 1.6% user + 1.6% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   3.8% 1087/com.android.phone: 1.2% user + 2.5% kernel / faults: 28 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   2.7% 378/kworker/u4:6-kverityd: 0% user + 2.7% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   2.3% 459/logcat: 0.5% user + 1.7% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   2.2% 869/com.android.permissioncontroller: 0.9% user + 1.2% kernel / faults: 12 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   1.2% 1/init: 0.4% user + 0.8% kernel / faults: 1 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   1.3% 13/rcu_preempt: 0% user + 1.3% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   1.6% 204/logd: 0.8% user + 0.8% kernel / faults: 1 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   1.7% 454/adbd: 0.5% user + 1.1% kernel / faults: 841 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   1.4% 206/servicemanager: 0.2% user + 1.1% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.6% 24/ksoftirqd/1: 0% user + 0.6% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.8% 326/kworker/u5:2-blk_crypto_wq: 0% user + 0.8% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.8% 382/android.hardware.graphics.composer@2.4-service: 0.2% user + 0.5% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.9% 745/kworker/1:0-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.5% 253/kworker/u5:1-blk_crypto_wq: 0% user + 0.5% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 90/kworker/1:1H-kblockd: 0% user + 0.2% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 111/kworker/0:2-events: 0% user + 0.2% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 112/kworker/0:1H-kblockd: 0% user + 0.2% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 205/lmkd: 0% user + 0.2% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 362/statsd: 0% user + 0.2% kernel / faults: 5 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   0.2% 404/audioserver: 0.2% user + 0% kernel / faults: 1 minor
+10-10 07:08:34.555   584  1272 E ActivityManager:   0% 456/traced_probes: 0% user + 0% kernel
+10-10 07:08:34.555   584  1272 E ActivityManager: 99% TOTAL: 33% user + 60% kernel + 3.6% irq + 2% softirq
+10-10 07:08:34.555   584  1272 E ActivityManager: CPU usage from 459123ms to 459123ms ago (1970-01-01 07:00:00.000 to 1970-01-01 07:00:00.000) with 0% awake:
+10-10 07:08:34.555   584  1272 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+10-10 07:09:46.805   584  1771 E ActivityManager: Aborting stack trace dump (current native pid=415); deadline exceeded.
+10-10 07:09:49.093   584  1771 E ActivityManager: ANR in com.android.systemui
+10-10 07:09:49.093   584  1771 E ActivityManager: PID: 1469
+10-10 07:09:49.093   584  1771 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:09:49.093   584  1771 E ActivityManager: ErrorId: 5b85da34-5f88-421a-ad9e-6151182d71f9
+10-10 07:09:49.093   584  1771 E ActivityManager: Frozen: false
+10-10 07:09:49.093   584  1771 E ActivityManager: Load: 16.34 / 8.16 / 3.54
+10-10 07:09:49.093   584  1771 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:09:49.093   584  1771 E ActivityManager: some avg10=1.85 avg60=0.99 avg300=0.37 total=1662970
+10-10 07:09:49.093   584  1771 E ActivityManager: full avg10=1.09 avg60=0.51 avg300=0.17 total=872469
+10-10 07:09:49.093   584  1771 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:09:49.093   584  1771 E ActivityManager: 
+10-10 07:09:49.093   584  1771 E ActivityManager: CPU usage from 1598ms to 45108ms later (2026-10-10 07:09:03.342 to 2026-10-10 07:09:46.851):
+10-10 07:09:49.093   584  1771 E ActivityManager:   70% 584/system_server: 27% user + 42% kernel / faults: 11615 minor 33 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   12% 1132/com.android.launcher3: 6.9% user + 5.7% kernel / faults: 10146 minor 30 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   7.6% 869/com.android.permissioncontroller: 3.1% user + 4.5% kernel / faults: 997 minor 5 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   7.6% 1469/com.android.systemui: 3.3% user + 4.3% kernel / faults: 2946 minor 1 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   7.1% 1509/com.android.phone: 3.2% user + 3.8% kernel / faults: 2984 minor 1 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   4.1% 1025/com.android.networkstack.process: 1.9% user + 2.2% kernel / faults: 1029 minor 6 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   4% 1490/com.android.providers.media.module: 1.5% user + 2.5% kernel / faults: 827 minor 16 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   3.8% 388/android.hardware.sensors@2.1-service.multihal: 1.4% user + 2.3% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   3.3% 204/logd: 0.9% user + 2.3% kernel / faults: 146 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   2.7% 378/kworker/u4:6-kverityd: 0% user + 2.7% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   3.2% 1567/android.process.acore: 1.4% user + 1.7% kernel / faults: 451 minor 1 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.3% 158/kworker/u4:3-events_unbound: 0% user + 1.3% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   2.1% 104/kswapd0: 0% user + 2.1% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.5% 363/netd: 0.5% user + 1% kernel / faults: 423 minor 12 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.7% 459/logcat: 0.4% user + 1.3% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.5% 1/init: 0.4% user + 1% kernel / faults: 20 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.4% 370/kworker/u4:5-kverityd: 0% user + 1.4% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.4% 362/statsd: 0.4% user + 0.9% kernel / faults: 126 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.3% 415/surfaceflinger: 0.4% user + 0.9% kernel / faults: 342 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.2% 745/kworker/1:0-virtio_vsock: 0% user + 1.2% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.2% 258/jbd2/dm-32-8: 0% user + 1.2% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.1% 364/zygote64: 0% user + 1% kernel / faults: 473 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   1.1% 13/rcu_preempt: 0% user + 1.1% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   1% 454/adbd: 0.2% user + 0.7% kernel / faults: 3291 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.8% 1541/com.android.documentsui: 0.2% user + 0.6% kernel / faults: 488 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.9% 206/servicemanager: 0.4% user + 0.5% kernel / faults: 1 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.7% 32/kcompactd0: 0% user + 0.7% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.9% 7/kworker/u4:0-kverityd: 0% user + 0.9% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.8% 382/android.hardware.graphics.composer@2.4-service: 0.2% user + 0.6% kernel / faults: 1 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.6% 1524/com.android.emulator.multidisplay: 0.2% user + 0.3% kernel / faults: 663 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.5% 205/lmkd: 0.1% user + 0.4% kernel / faults: 1 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 1066/com.android.se: 0.1% user + 0.1% kernel / faults: 186 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.4% 1623/android.process.media: 0.2% user + 0.2% kernel / faults: 66 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.1% 406/iptables-restore: 0% user + 0.1% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.3% 214/vold: 0.1% user + 0.2% kernel / faults: 37 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.3% 471/wificond: 0.1% user + 0.1% kernel / faults: 5 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 498/mdnsd: 0% user + 0.1% kernel / faults: 8 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.3% 859/wpa_supplicant: 0.1% user + 0.1% kernel / faults: 3 minor 2 major
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.3% 24/ksoftirqd/1: 0% user + 0.3% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 404/audioserver: 0.1% user + 0.1% kernel / faults: 65 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 466/installd: 0% user + 0.2% kernel / faults: 3 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 472/libgoldfish-rild: 0.1% user + 0.1% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 462/cameraserver: 0.1% user + 0.1% kernel / faults: 9 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 1580/com.android.externalstorage: 0% user + 0.1% kernel / faults: 48 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.2% 1744/com.android.localtransport: 0% user + 0.1% kernel / faults: 235 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.1% 266/tombstoned: 0% user + 0% kernel
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0.1% kernel / faults: 1 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0% 407/ip6tables-restore: 0% user + 0% kernel / faults: 1 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.1% 1337/android.ext.services: 0% user + 0.1% kernel / faults: 32 minor
+10-10 07:09:49.093   584  1771 E ActivityManager:   0.1% 90/kworker/1:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0.1% 227/keystore2: 0% user + 0% kernel / faults: 19 minor
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 1089/com.android.settings: 0% user + 0% kernel / faults: 19 minor
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 162/ueventd: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 457/traced: 0% user + 0% kernel / faults: 1 minor 2 major
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 357/dhcpclient: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 383/android.hardware.health@2.1-service: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 28/kauditd: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 112/kworker/0:1H-kblockd: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 226/android.system.suspend@1.0-service: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 1353/com.android.deskclock: 0% user + 0% kernel / faults: 1 minor
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 1602/com.android.managedprovisioning: 0% user + 0% kernel / faults: 6 minor
+10-10 07:09:49.159   584  1771 E ActivityManager:   0% 1657/com.android.providers.calendar: 0% user + 0% kernel / faults: 7 minor
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1793/com.android.provision: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1857/com.android.traceur: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1874/com.android.quicksearchbox: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1913/com.android.dialer: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1958/com.android.printspooler: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 1982/com.android.calendar: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 2000/com.android.camera2: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 2001/com.android.keychain: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 2061/com.android.cellbroadcastreceiver.module: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 2100/com.android.contacts: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:  +0% 2109/com.android.cellbroadcastreceiver: 0% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager: 97% TOTAL: 32% user + 58% kernel + 0.1% iowait + 3.5% irq + 2.5% softirq
+10-10 07:09:49.159   584  1771 E ActivityManager: CPU usage from 3110ms to 20335ms later (2026-10-10 07:09:04.853 to 2026-10-10 07:09:22.078):
+10-10 07:09:49.159   584  1771 E ActivityManager:   81% 584/system_server: 34% user + 47% kernel / faults: 3396 minor 6 major
+10-10 07:09:49.159   584  1771 E ActivityManager:     9.7% 1771/AnrConsumer: 3.1% user + 6.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     8.7% 601/binder:584_2: 3.9% user + 4.7% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     6.4% 657/PackageInstalle: 3.9% user + 2.5% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     3.1% 584/system_server: 1.7% user + 1.4% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     2.9% 802/WifiHandlerThre: 1.4% user + 1.4% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     2.5% 1454/binder:584_10: 1% user + 1.4% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     2.1% 605/android.fg: 1% user + 1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.8% 809/ConnectivitySer: 0.6% user + 1.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.5% 606/android.ui: 0.7% user + 0.7% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.5% 1133/binder:584_C: 0.7% user + 0.7% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.5% 1459/binder:584_14: 0.6% user + 0.9% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.4% 1450/binder:584_E: 0.7% user + 0.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.4% 1453/binder:584_F: 0.2% user + 1.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1.3% 1281/binder:584_D: 0.7% user + 0.5% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1% 682/oregroundThread: 0.3% user + 0.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1% 918/binder:584_6: 0.5% user + 0.5% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     1% 920/binder:584_8: 0.2% user + 0.7% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.9% 861/binder:584_5: 0.1% user + 0.7% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.7% 665/binder:584_4: 0.3% user + 0.3% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.7% 673/SensorService: 0.1% user + 0.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.6% 597/ReferenceQueueD: 0% user + 0.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.6% 615/android.bg: 0% user + 0.6% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.6% 616/ActivityManager: 0.2% user + 0.3% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.5% 609/android.anim: 0.2% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.5% 1457/binder:584_12: 0.1% user + 0.3% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.5% 1458/binder:584_13: 0.2% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.3% 598/FinalizerDaemon: 0.1% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.3% 698/StorageManagerS: 0.2% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.3% 806/WifiScanningSer: 0.1% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.3% 1456/binder:584_11: 0.2% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.2% 595/Jit thread pool: 0.1% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.2% 608/android.display: 0% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.2% 617/ActivityManager: 0% user + 0.2% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.2% 621/batterystats-ha: 0.2% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 607/android.io: 0% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 620/OomAdjuster: 0% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 623/bgres-controlle: 0% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 632/PowerManagerSer: 0% user + 0.1% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 692/InputReader: 0.1% user + 0% kernel
+10-10 07:09:49.159   584  1771 E ActivityManager:     0.1% 798/SkDestroyListen: 0.1% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 799/NetworkStats: 0% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 807/WifiManagerThre: 0.1% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 833/ackgroundThread: 0.1% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 867/NetworkStatsObs: 0.1% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   13% 1132/com.android.launcher3: 6.6% user + 6.8% kernel / faults: 341 minor 9 major
+10-10 07:09:49.166   584  1771 E ActivityManager:     8.5% 1132/droid.launcher3: 4.2% user + 4.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     1% 1489/queued-work-loo: 0.4% user + 0.6% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1819/RenderThread: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   2.8% 32/kcompactd0: 0% user + 2.8% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   4.5% 388/android.hardware.sensors@2.1-service.multihal: 2% user + 2.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     3.8% 417/sensors@2.1-ser: 1.8% user + 1.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.9% 418/sensors@2.1-ser: 0.3% user + 0.5% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   3.6% 204/logd: 1.4% user + 2.1% kernel / faults: 27 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     2.3% 217/logd.writer: 0.9% user + 1.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     1.2% 479/logd.reader.per: 0.4% user + 0.7% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   2.1% 7/kworker/u4:0-ext4-rsv-conversion: 0% user + 2.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1.9% 1/init: 0.5% user + 1.3% kernel / faults: 7 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     1.4% 159/init: 0.5% user + 0.8% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.4% 1/init: 0% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   6.6% 869/com.android.permissioncontroller: 3.1% user + 3.5% kernel / faults: 54 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     3.9% 1816/RoleControllerS: 1.4% user + 2.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.4% 869/ssioncontroller: 0.4% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.4% 915/pool-2-thread-6: 0% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 908/pool-2-thread-1: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 913/pool-2-thread-4: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 917/pool-2-thread-8: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   7.2% 1490/com.android.providers.media.module: 2.8% user + 4.3% kernel / faults: 79 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     6% 1697/fg: 2.6% user + 3.3% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.7% 1708/android.bg: 0% user + 0.7% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1503/binder:1490_1: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   2.9% 370/kworker/u4:5-ext4-rsv-conversion: 0% user + 2.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1.7% 104/kswapd0: 0% user + 1.7% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   5% 1025/com.android.networkstack.process: 1.6% user + 3.3% kernel / faults: 50 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     2.2% 1319/pool-2-thread-1: 0.2% user + 2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     1.2% 1196/IpClient.wlan0: 0.4% user + 0.8% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.8% 1041/binder:1025_3: 0.6% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1025/rkstack.process: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1037/binder:1025_1: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1048/droid.tethering: 0.2% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   2.5% 459/logcat: 0.5% user + 2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   2.1% 454/adbd: 0.4% user + 1.7% kernel / faults: 1067 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.8% 454/adbd: 0.1% user + 0.6% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.6% 496/adbd: 0.1% user + 0.5% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.3% 486/adbd: 0.2% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 497/adbd: 0.1% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 482/adbd: 0% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 493/jdwp control: 0.1% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.1% 494/adbd: 0% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1.9% 363/netd: 0.7% user + 1.2% kernel / faults: 27 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     1.2% 363/binder:363_4: 0.4% user + 0.7% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.6% 438/netd: 0.2% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   4.1% 1509/com.android.phone: 1.7% user + 2.4% kernel / faults: 87 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     2.9% 1509/m.android.phone: 0.9% user + 1.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.4% 1536/binder:1509_1: 0.4% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1518/HeapTaskDaemon: 0% user + 0.2% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:    +0% 1896/pool-2-thread-1: 0% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:    +0% 1911/RcsProvisioning: 0% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   0.9% 13/rcu_preempt: 0% user + 0.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   3.8% 1469/com.android.systemui: 1.4% user + 2.4% kernel / faults: 98 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     3.1% 1469/ndroid.systemui: 1.2% user + 1.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.7% 1846/SysUiBg: 0.2% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 1785/binder:1469_3: 0.2% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:    +0% 1898/LogBuffer-Keygu: 0% user + 0% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1% 206/servicemanager: 0% user + 0.9% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1% 258/jbd2/dm-32-8: 0% user + 1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   0.6% 111/kworker/0:2-events: 0% user + 0.6% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   0.8% 214/vold: 0.1% user + 0.6% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.7% 214/binder:214_2: 0.1% user + 0.5% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1% 364/zygote64: 0.1% user + 0.8% kernel / faults: 86 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   0.8% 362/statsd: 0.3% user + 0.5% kernel / faults: 5 minor
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.6% 412/statsd.writer: 0.2% user + 0.4% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:     0.2% 380/binder:362_2: 0.1% user + 0.1% kernel
+10-10 07:09:49.166   584  1771 E ActivityManager:   1.6% 745/kworker/1:0-virtio_vsock: 0% user + 1.6% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   1.9% 1541/com.android.documentsui: 0.9% user + 0.9% kernel / faults: 59 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.4% 1564/AsyncTask #1: 0% user + 0.4% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1541/oid.documentsui: 0.2% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1903/pool-10-thread-: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1904/pool-10-thread-: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1905/pool-10-thread-: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1906/pool-10-thread-: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1907/pool-10-thread-: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.6% 415/surfaceflinger: 0.2% user + 0.4% kernel / faults: 1 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 415/surfaceflinger: 0.1% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 521/TimerDispatch: 0.1% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 509/binder:415_1: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 523/appSf: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 526/surfaceflinger: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 530/surfaceflinger: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 699/binder:415_4: 0.1% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.7% 498/mdnsd: 0.1% user + 0.6% kernel / faults: 8 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.5% 382/android.hardware.graphics.composer@2.4-service: 0.1% user + 0.4% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.5% 420/display_0_vsync: 0% user + 0.5% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 382/composer@2.4-se: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.5% 471/wificond: 0.4% user + 0.1% kernel / faults: 1 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.4% 471/wificond: 0.4% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 24/ksoftirqd/1: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.3% 205/lmkd: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.3% 205/lmkd: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 395/android.hardware.wifi@1.0-service: 0.1% user + 0.1% kernel / faults: 1 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 395/wifi@1.0-servic: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 404/audioserver: 0.1% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 542/binder:404_1: 0.1% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.5% 1567/android.process.acore: 0.2% user + 0.2% kernel / faults: 2 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1567/d.process.acore: 0.2% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1598/binder:1567_2: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.5% 1580/com.android.externalstorage: 0.2% user + 0.2% kernel / faults: 21 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1580/externalstorage: 0.2% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0% 28/kauditd: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0% 162/ueventd: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.1% 357/dhcpclient: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.1% 406/iptables-restore: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.1% 462/cameraserver: 0% user + 0.1% kernel / faults: 5 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 1156/binder:462_4: 0% user + 0.1% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:    +0% 1841/binder:462_A: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.1% 470/storaged: 0.1% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.1% 546/storaged: 0.1% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1042/gnss@2.0-servic: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 1337/android.ext.services: 0% user + 0.2% kernel / faults: 4 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1388/binder:1337_2: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 1353/com.android.deskclock: 0% user + 0.2% kernel / faults: 1 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:   0.2% 1744/com.android.localtransport: 0% user + 0.2% kernel / faults: 2 minor
+10-10 07:09:49.167   584  1771 E ActivityManager:     0.2% 1762/binder:1744_3: 0% user + 0.2% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:  +0% 1793/com.android.provision: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:  +0% 1857/com.android.traceur: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager:  +0% 1874/com.android.quicksearchbox: 0% user + 0% kernel
+10-10 07:09:49.167   584  1771 E ActivityManager: 97% TOTAL: 34% user + 57% kernel + 0% iowait + 3.5% irq + 2.3% softirq
+10-10 07:09:54.011   584  1771 E ActivityManager: ANR in com.android.phone
+10-10 07:09:54.011   584  1771 E ActivityManager: PID: 1509
+10-10 07:09:54.011   584  1771 E ActivityManager: Reason: executing service com.android.phone/.TelephonyDebugService
+10-10 07:09:54.011   584  1771 E ActivityManager: ErrorId: 61b0350a-70e6-4422-8809-692598ada58e
+10-10 07:09:54.011   584  1771 E ActivityManager: Frozen: false
+10-10 07:09:54.011   584  1771 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+10-10 07:09:54.011   584  1771 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:09:54.011   584  1771 E ActivityManager: some avg10=1.05 avg60=1.28 avg300=0.55 total=2526160
+10-10 07:09:54.011   584  1771 E ActivityManager: full avg10=0.63 avg60=0.69 avg300=0.28 total=1383323
+10-10 07:09:54.011   584  1771 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:09:54.011   584  1771 E ActivityManager: 
+10-10 07:09:54.011   584  1771 E ActivityManager: CPU usage from 3296ms to -2082ms ago (2026-10-10 07:09:46.851 to 2026-10-10 07:09:52.229):
+10-10 07:09:54.011   584  1771 E ActivityManager:   92% 584/system_server: 35% user + 56% kernel / faults: 2284 minor 2 major
+10-10 07:09:54.011   584  1771 E ActivityManager:   13% 1509/com.android.phone: 5% user + 8.4% kernel / faults: 359 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   7.5% 869/com.android.permissioncontroller: 2.8% user + 4.7% kernel / faults: 83 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   6.6% 1469/com.android.systemui: 2.1% user + 4.5% kernel / faults: 178 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   3.2% 388/android.hardware.sensors@2.1-service.multihal: 0.8% user + 2.3% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   3.1% 415/surfaceflinger: 0.3% user + 2.8% kernel / faults: 41 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   3.3% 204/logd: 1.3% user + 1.9% kernel / faults: 11 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   2.3% 364/zygote64: 0.1% user + 2.2% kernel / faults: 129 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   2.3% 459/logcat: 0.7% user + 1.5% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   2.1% 1623/android.process.media: 0.8% user + 1.2% kernel / faults: 41 minor 8 major
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.9% 1132/com.android.launcher3: 0.5% user + 1.4% kernel / faults: 78 minor 1 major
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.9% 1541/com.android.documentsui: 0.8% user + 1% kernel / faults: 112 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.7% 1025/com.android.networkstack.process: 0.5% user + 1.2% kernel / faults: 34 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.6% 362/statsd: 0.5% user + 1.1% kernel / faults: 17 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.6% 158/kworker/u4:3-events_unbound: 0% user + 1.6% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.5% 227/keystore2: 0.5% user + 0.9% kernel / faults: 127 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.4% 1913/com.android.dialer: 0.8% user + 0.5% kernel / faults: 51 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.4% 2100/com.android.contacts: 0.1% user + 1.2% kernel / faults: 187 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.2% 363/netd: 0.3% user + 0.9% kernel / faults: 67 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.2% 745/kworker/1:0-virtio_vsock: 0% user + 1.2% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.2% 2001/com.android.keychain: 0.5% user + 0.7% kernel / faults: 187 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1.1% 13/rcu_preempt: 0% user + 1.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   1% 454/adbd: 0% user + 1% kernel / faults: 473 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1% 1353/com.android.deskclock: 0.3% user + 0.7% kernel / faults: 38 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 1775/abb: 0% user + 0% kernel / faults: 15 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   1% 2109/com.android.cellbroadcastreceiver: 0.3% user + 0.7% kernel / faults: 182 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.9% 1/init: 0.1% user + 0.7% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.9% 258/jbd2/dm-32-8: 0% user + 0.9% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.7% 104/kswapd0: 0% user + 0.7% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.7% 370/kworker/u4:5-kverityd: 0% user + 0.7% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.6% 111/kworker/0:2-events: 0% user + 0.6% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.5% 382/android.hardware.graphics.composer@2.4-service: 0.1% user + 0.3% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.5% 383/android.hardware.health@2.1-service: 0.3% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.3% 12/ksoftirqd/0: 0% user + 0.3% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.3% 205/lmkd: 0% user + 0.3% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.3% 206/servicemanager: 0.1% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 90/kworker/1:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 266/tombstoned: 0.1% user + 0% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0.1% kernel / faults: 38 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 404/audioserver: 0% user + 0.1% kernel / faults: 23 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 462/cameraserver: 0% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 498/mdnsd: 0.1% user + 0% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 1490/com.android.providers.media.module: 0% user + 0.1% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 1567/android.process.acore: 0% user + 0.1% kernel / faults: 2 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 1580/com.android.externalstorage: 0% user + 0.1% kernel / faults: 1 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:   0.1% 2061/com.android.cellbroadcastreceiver.module: 0% user + 0.1% kernel / faults: 34 minor
+10-10 07:09:54.011   584  1771 E ActivityManager:  +0% 2171/com.android.packageinstaller: 0% user + 0% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager:  +0% 2175/com.android.dynsystem: 0% user + 0% kernel
+10-10 07:09:54.011   584  1771 E ActivityManager: 97% TOTAL: 31% user + 60% kernel + 0.1% iowait + 3.3% irq + 2.5% softirq
+10-10 07:09:54.011   584  1771 E ActivityManager: CPU usage from 536885ms to 536885ms ago (1970-01-01 07:00:00.000 to 1970-01-01 07:00:00.000) with 0% awake:
+10-10 07:09:54.011   584  1771 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+10-10 07:10:47.770   584  2450 E ActivityManager: Aborting stack trace dump (current native pid=468); deadline exceeded.
+10-10 07:10:50.191   584  2450 E ActivityManager: ANR in com.android.systemui
+10-10 07:10:50.191   584  2450 E ActivityManager: PID: 2241
+10-10 07:10:50.191   584  2450 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:10:50.191   584  2450 E ActivityManager: ErrorId: ccea336a-bcda-48ba-8c62-b17059cc6e49
+10-10 07:10:50.191   584  2450 E ActivityManager: Frozen: false
+10-10 07:10:50.191   584  2450 E ActivityManager: Load: 15.65 / 9.49 / 4.29
+10-10 07:10:50.191   584  2450 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:10:50.191   584  2450 E ActivityManager: some avg10=3.41 avg60=1.90 avg300=0.74 total=3266135
+10-10 07:10:50.191   584  2450 E ActivityManager: full avg10=1.26 avg60=0.86 avg300=0.35 total=1709385
+10-10 07:10:50.191   584  2450 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:10:50.191   584  2450 E ActivityManager: 
+10-10 07:10:50.191   584  2450 E ActivityManager: CPU usage from 0ms to 32180ms later (2026-10-10 07:10:15.592 to 2026-10-10 07:10:47.772):
+10-10 07:10:50.191   584  2450 E ActivityManager:   56% 584/system_server: 21% user + 35% kernel / faults: 4666 minor 37 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   33% 2355/cn.jiang.opennote: 16% user + 17% kernel / faults: 15240 minor 24 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   12% 2241/com.android.systemui: 5% user + 6.9% kernel / faults: 3541 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   11% 2262/com.android.phone: 4.4% user + 6.9% kernel / faults: 3302 minor 2 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   7.6% 869/com.android.permissioncontroller: 2.8% user + 4.7% kernel / faults: 770 minor 1 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   3.9% 388/android.hardware.sensors@2.1-service.multihal: 1.1% user + 2.7% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   3.5% 1132/com.android.launcher3: 1.9% user + 1.5% kernel / faults: 783 minor 1 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   2.4% 467/media.extractor: 0.8% user + 1.6% kernel / faults: 1258 minor 4 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   2.2% 1025/com.android.networkstack.process: 0.7% user + 1.4% kernel / faults: 339 minor 1 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   2.2% 469/mediaserver: 0.4% user + 1.7% kernel / faults: 34 minor 35 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   2.2% 204/logd: 0.5% user + 1.6% kernel / faults: 64 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   2% 104/kswapd0: 0% user + 2% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.9% 1/init: 0.5% user + 1.4% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.8% 378/kworker/u4:6-kverityd: 0% user + 1.8% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.5% 1490/com.android.providers.media.module: 0.3% user + 1.2% kernel / faults: 101 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.5% 1541/com.android.documentsui: 0.6% user + 0.9% kernel / faults: 596 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.4% 370/kworker/u4:5-kverityd: 0% user + 1.4% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.2% 459/logcat: 0.2% user + 0.9% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.2% 13/rcu_preempt: 0% user + 1.2% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.1% 415/surfaceflinger: 0.4% user + 0.7% kernel / faults: 334 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   1.1% 362/statsd: 0.3% user + 0.7% kernel / faults: 139 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.9% 258/jbd2/dm-32-8: 0% user + 0.9% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.9% 745/kworker/1:0-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.8% 382/android.hardware.graphics.composer@2.4-service: 0.2% user + 0.6% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.8% 363/netd: 0.2% user + 0.5% kernel / faults: 184 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.8% 1567/android.process.acore: 0.2% user + 0.5% kernel / faults: 285 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.7% 206/servicemanager: 0.1% user + 0.5% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.3% 1524/com.android.emulator.multidisplay: 0.1% user + 0.1% kernel / faults: 189 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.6% 158/kworker/u4:3-events_unbound: 0% user + 0.6% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.3% 1066/com.android.se: 0.1% user + 0.2% kernel / faults: 179 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 468/media.metrics: 0% user + 0.1% kernel / faults: 82 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.5% 12/ksoftirqd/0: 0% user + 0.5% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.5% 2320/com.android.messaging: 0.2% user + 0.2% kernel / faults: 199 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.4% 205/lmkd: 0.1% user + 0.3% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.4% 462/cameraserver: 0.1% user + 0.3% kernel / faults: 95 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.4% 1623/android.process.media: 0.2% user + 0.2% kernel / faults: 34 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.2% 1657/com.android.providers.calendar: 0.1% user + 0% kernel / faults: 89 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.4% 364/zygote64: 0% user + 0.3% kernel / faults: 129 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.4% 454/adbd: 0.2% user + 0.2% kernel / faults: 6 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.3% 404/audioserver: 0.1% user + 0.2% kernel / faults: 74 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.2% 227/keystore2: 0.1% user + 0.1% kernel / faults: 96 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.2% 472/libgoldfish-rild: 0% user + 0.1% kernel / faults: 1 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 266/tombstoned: 0% user + 0% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 214/vold: 0% user + 0% kernel / faults: 51 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.2% 471/wificond: 0.1% user + 0% kernel / faults: 1 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 1089/com.android.settings: 0% user + 0% kernel / faults: 56 minor 1 major
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 2259/app_process: 0.1% user + 0% kernel / faults: 20 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 2424/com.android.onetimeinitializer: 0% user + 0% kernel / faults: 215 minor
+10-10 07:10:50.191   584  2450 E ActivityManager:   0.1% 90/kworker/1:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 112/kworker/0:1H-kblockd: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 375/android.hardware.drm@1.4-service.clearkey: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 498/mdnsd: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 859/wpa_supplicant: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 1337/android.ext.services: 0% user + 0% kernel / faults: 3 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 1580/com.android.externalstorage: 0% user + 0% kernel / faults: 6 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:  +0% 2528/com.android.remoteprovisioner: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:  +0% 2605/com.android.shell: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:  +0% 2638/com.android.statementservice: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager: 97% TOTAL: 35% user + 56% kernel + 0% iowait + 3.1% irq + 2.1% softirq
+10-10 07:10:50.285   584  2450 E ActivityManager: CPU usage from 384ms to 6960ms later (2026-10-10 07:10:15.977 to 2026-10-10 07:10:22.552):
+10-10 07:10:50.285   584  2450 E ActivityManager:   92% 584/system_server: 27% user + 64% kernel / faults: 396 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     47% 2450/AnrConsumer: 7.7% user + 39% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     9.7% 1281/binder:584_D: 3.8% user + 5.8% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     6.7% 861/binder:584_5: 2.9% user + 3.8% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     6.7% 918/binder:584_6: 2.4% user + 4.3% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     4.8% 615/android.bg: 1.4% user + 3.3% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     4.8% 1453/binder:584_F: 2.4% user + 2.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     4.8% 1505/pool-11-thread-: 1.9% user + 2.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     3.3% 665/binder:584_4: 0.9% user + 2.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     2.4% 584/system_server: 0.4% user + 1.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.9% 606/android.ui: 0.9% user + 0.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.9% 674/jobscheduler.bg: 0.4% user + 1.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.4% 806/WifiScanningSer: 1.4% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.9% 605/android.fg: 0.4% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.9% 673/SensorService: 0% user + 0.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.9% 802/WifiHandlerThre: 0.4% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.4% 798/SkDestroyListen: 0% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.4% 809/ConnectivitySer: 0.4% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.4% 959/binder:584_9: 0% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2478/pool-170-thread: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2482/pool-171-thread: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   16% 2355/cn.jiang.opennote: 11% user + 5.8% kernel / faults: 35 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     16% 2355/.jiang.opennote: 11% user + 5.8% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   10% 869/com.android.permissioncontroller: 5.7% user + 4.5% kernel / faults: 135 minor 1 major
+10-10 07:10:50.285   584  2450 E ActivityManager:     9% 1816/RoleControllerS: 4.9% user + 4.1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.2% 885/Jit thread pool: 0.4% user + 0.8% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   10% 1132/com.android.launcher3: 7.5% user + 2.9% kernel / faults: 401 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     10% 1175/launcher-loader: 7.5% user + 3.3% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   13% 2262/com.android.phone: 5.1% user + 8.6% kernel / faults: 168 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     9.2% 2262/m.android.phone: 1.7% user + 7.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     2.3% 2419/binder:2262_6: 1.1% user + 1.1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.7% 2418/binder:2262_5: 0.5% user + 1.1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.5% 2274/binder:2262_2: 0.5% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2484/android.bg: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2485/TelecomAccountR: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   14% 2241/com.android.systemui: 5.1% user + 9.5% kernel / faults: 237 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     14% 2241/ndroid.systemui: 5.1% user + 8.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.6% 2457/SysUiBg: 0% user + 0.6% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2479/LogBuffer-Media: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2480/LogBuffer-Media: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:    +0% 2487/LogBuffer-Media: 0% user + 0% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   2.5% 1/init: 0.4% user + 2.1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.9% 159/init: 0.4% user + 1.5% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.4% 1/init: 0% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   2.3% 204/logd: 0.4% user + 1.8% kernel / faults: 38 minor
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.6% 217/logd.writer: 0.2% user + 1.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.6% 479/logd.reader.per: 0.2% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   1.7% 206/servicemanager: 0.2% user + 1.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   1% 13/rcu_preempt: 0% user + 1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   3.4% 388/android.hardware.sensors@2.1-service.multihal: 0.4% user + 2.9% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     2.9% 417/sensors@2.1-ser: 0.4% user + 2.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   1% 104/kswapd0: 0% user + 1% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   2.9% 469/mediaserver: 0.9% user + 1.9% kernel / faults: 7 major
+10-10 07:10:50.285   584  2450 E ActivityManager:     1.9% 1676/binder:469_3: 0.4% user + 1.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:     0.4% 469/mediaserver: 0% user + 0.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   2.4% 378/kworker/u4:6-writeback: 0% user + 2.4% kernel
+10-10 07:10:50.285   584  2450 E ActivityManager:   0.6% 12/ksoftirqd/0: 0% user + 0.6% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.7% 111/kworker/0:2-events: 0% user + 0.7% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.9% 258/jbd2/dm-32-8: 0% user + 0.9% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   1.9% 471/wificond: 1.4% user + 0.4% kernel / faults: 1 minor
+10-10 07:10:50.326   584  2450 E ActivityManager:     1.9% 471/wificond: 1.4% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   1.5% 459/logcat: 0% user + 1.5% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   1.2% 1025/com.android.networkstack.process: 0% user + 1.2% kernel / faults: 10 minor
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.4% 1025/rkstack.process: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.4% 2415/Thread-9: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.9% 382/android.hardware.graphics.composer@2.4-service: 0.4% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.4% 420/display_0_vsync: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.9% 467/media.extractor: 0.4% user + 0.4% kernel / faults: 10 minor
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.9% 2467/binder:467_4: 0.4% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.8% 745/kworker/1:0-virtio_vsock: 0% user + 0.8% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.8% 1490/com.android.providers.media.module: 0% user + 0.8% kernel / faults: 9 minor
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.8% 1933/AsyncTask #1: 0.4% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.4% 1693/ackgroundThread: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.1% 90/kworker/1:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.2% 209/psimon: 0% user + 0.2% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.4% 362/statsd: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.4% 370/kworker/u4:5-writeback: 0% user + 0.4% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.5% 454/adbd: 0.5% user + 0% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.5% 482/adbd: 0.5% user + 0% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.4% 470/storaged: 0.4% user + 0% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.4% 546/storaged: 0.4% user + 0% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager:   0.5% 2320/com.android.messaging: 0.5% user + 0% kernel / faults: 3 minor
+10-10 07:10:50.326   584  2450 E ActivityManager:     0.5% 2409/AsyncTask #3: 0% user + 0.5% kernel
+10-10 07:10:50.326   584  2450 E ActivityManager: 96% TOTAL: 32% user + 58% kernel + 0.1% iowait + 3.3% irq + 2.6% softirq
+10-10 07:10:52.913   584  2450 E ActivityManager: ANR in com.android.phone
+10-10 07:10:52.913   584  2450 E ActivityManager: PID: 2262
+10-10 07:10:52.913   584  2450 E ActivityManager: Reason: executing service com.android.phone/.TelephonyDebugService
+10-10 07:10:52.913   584  2450 E ActivityManager: ErrorId: d9ffa9c1-cb78-4998-b7a4-60fd967475ff
+10-10 07:10:52.913   584  2450 E ActivityManager: Frozen: false
+10-10 07:10:52.913   584  2450 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+10-10 07:10:52.913   584  2450 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:10:52.913   584  2450 E ActivityManager: some avg10=2.43 avg60=1.80 avg300=0.83 total=3877199
+10-10 07:10:52.913   584  2450 E ActivityManager: full avg10=1.30 avg60=0.89 avg300=0.41 total=2057163
+10-10 07:10:52.913   584  2450 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:10:52.913   584  2450 E ActivityManager: 
+10-10 07:10:52.913   584  2450 E ActivityManager: CPU usage from 34978ms to 2798ms ago (2026-10-10 07:10:15.592 to 2026-10-10 07:10:47.772):
+10-10 07:10:52.913   584  2450 E ActivityManager:   56% 584/system_server: 21% user + 35% kernel / faults: 4666 minor 37 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   33% 2355/cn.jiang.opennote: 16% user + 17% kernel / faults: 15240 minor 24 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   12% 2241/com.android.systemui: 5% user + 6.9% kernel / faults: 3541 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   11% 2262/com.android.phone: 4.4% user + 6.9% kernel / faults: 3302 minor 2 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   7.6% 869/com.android.permissioncontroller: 2.8% user + 4.7% kernel / faults: 770 minor 1 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   3.9% 388/android.hardware.sensors@2.1-service.multihal: 1.1% user + 2.7% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   3.5% 1132/com.android.launcher3: 1.9% user + 1.5% kernel / faults: 783 minor 1 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   2.4% 467/media.extractor: 0.8% user + 1.6% kernel / faults: 1258 minor 4 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   2.2% 1025/com.android.networkstack.process: 0.7% user + 1.4% kernel / faults: 339 minor 1 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   2.2% 469/mediaserver: 0.4% user + 1.7% kernel / faults: 34 minor 35 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   2.2% 204/logd: 0.5% user + 1.6% kernel / faults: 64 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   2% 104/kswapd0: 0% user + 2% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.9% 1/init: 0.5% user + 1.4% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.8% 378/kworker/u4:6-kverityd: 0% user + 1.8% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.5% 1490/com.android.providers.media.module: 0.3% user + 1.2% kernel / faults: 101 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.5% 1541/com.android.documentsui: 0.6% user + 0.9% kernel / faults: 596 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.4% 370/kworker/u4:5-kverityd: 0% user + 1.4% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.2% 459/logcat: 0.2% user + 0.9% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.2% 13/rcu_preempt: 0% user + 1.2% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.1% 415/surfaceflinger: 0.4% user + 0.7% kernel / faults: 334 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   1.1% 362/statsd: 0.3% user + 0.7% kernel / faults: 139 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.9% 258/jbd2/dm-32-8: 0% user + 0.9% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.9% 745/kworker/1:0-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.8% 382/android.hardware.graphics.composer@2.4-service: 0.2% user + 0.6% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.8% 363/netd: 0.2% user + 0.5% kernel / faults: 184 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.8% 1567/android.process.acore: 0.2% user + 0.5% kernel / faults: 285 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.7% 206/servicemanager: 0.1% user + 0.5% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.3% 1524/com.android.emulator.multidisplay: 0.1% user + 0.1% kernel / faults: 189 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.6% 158/kworker/u4:3-events_unbound: 0% user + 0.6% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.3% 1066/com.android.se: 0.1% user + 0.2% kernel / faults: 179 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 468/media.metrics: 0% user + 0.1% kernel / faults: 82 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.5% 12/ksoftirqd/0: 0% user + 0.5% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.5% 2320/com.android.messaging: 0.2% user + 0.2% kernel / faults: 199 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.4% 205/lmkd: 0.1% user + 0.3% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.4% 462/cameraserver: 0.1% user + 0.3% kernel / faults: 95 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.4% 1623/android.process.media: 0.2% user + 0.2% kernel / faults: 34 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.2% 1657/com.android.providers.calendar: 0.1% user + 0% kernel / faults: 89 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.4% 364/zygote64: 0% user + 0.3% kernel / faults: 129 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.4% 454/adbd: 0.2% user + 0.2% kernel / faults: 6 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.3% 404/audioserver: 0.1% user + 0.2% kernel / faults: 74 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.2% 227/keystore2: 0.1% user + 0.1% kernel / faults: 96 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.2% 472/libgoldfish-rild: 0% user + 0.1% kernel / faults: 1 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 266/tombstoned: 0% user + 0% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 214/vold: 0% user + 0% kernel / faults: 51 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.2% 471/wificond: 0.1% user + 0% kernel / faults: 1 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 1089/com.android.settings: 0% user + 0% kernel / faults: 56 minor 1 major
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 2259/app_process: 0.1% user + 0% kernel / faults: 20 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 2424/com.android.onetimeinitializer: 0% user + 0% kernel / faults: 215 minor
+10-10 07:10:52.913   584  2450 E ActivityManager:   0.1% 90/kworker/1:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 112/kworker/0:1H-kblockd: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 375/android.hardware.drm@1.4-service.clearkey: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 498/mdnsd: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 859/wpa_supplicant: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 1337/android.ext.services: 0% user + 0% kernel / faults: 3 minor
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 1580/com.android.externalstorage: 0% user + 0% kernel / faults: 6 minor
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:  +0% 2528/com.android.remoteprovisioner: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:  +0% 2605/com.android.shell: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager:  +0% 2638/com.android.statementservice: 0% user + 0% kernel
+10-10 07:10:52.947   584  2450 E ActivityManager: 97% TOTAL: 35% user + 56% kernel + 0% iowait + 3.1% irq + 2.1% softirq
+10-10 07:10:52.947   584  2450 E ActivityManager: CPU usage from 597308ms to 597308ms ago (1970-01-01 07:00:00.000 to 1970-01-01 07:00:00.000) with 0% awake:
+10-10 07:10:52.947   584  2450 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+--------- beginning of crash
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #7
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: Process: com.android.messaging, PID: 2320
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.String java.lang.CharSequence.toString()' on a null object reference
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh.refreshSelfParticipantList(Unknown Source:141)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh.refreshParticipants(Unknown Source:61)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at com.android.messaging.datamodel.ParticipantRefresh$2.run(Unknown Source:1)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-10 07:11:52.076  2320  2870 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1012)
+10-10 07:11:58.179   584  2800 E ActivityManager: Aborting stack trace dump (current native pid=415); deadline exceeded.
+10-10 07:11:59.613   584  2800 E ActivityManager: ANR in com.android.systemui
+10-10 07:11:59.613   584  2800 E ActivityManager: PID: 2691
+10-10 07:11:59.613   584  2800 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:11:59.613   584  2800 E ActivityManager: ErrorId: b8755182-b1a7-4257-b61f-c8d831270bb3
+10-10 07:11:59.613   584  2800 E ActivityManager: Frozen: false
+10-10 07:11:59.613   584  2800 E ActivityManager: Load: 15.18 / 10.66 / 5.08
+10-10 07:11:59.613   584  2800 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:11:59.613   584  2800 E ActivityManager: some avg10=0.37 avg60=1.43 avg300=0.83 total=4147813
+10-10 07:11:59.613   584  2800 E ActivityManager: full avg10=0.21 avg60=0.73 avg300=0.41 total=2220108
+10-10 07:11:59.613   584  2800 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:11:59.613   584  2800 E ActivityManager: 
+10-10 07:11:59.613   584  2800 E ActivityManager: CPU usage from 0ms to 43000ms later (2026-10-10 07:11:15.180 to 2026-10-10 07:11:58.180):
+10-10 07:11:59.613   584  2800 E ActivityManager:   49% 584/system_server: 15% user + 33% kernel / faults: 5278 minor 13 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   45% 2355/cn.jiang.opennote: 22% user + 22% kernel / faults: 10223 minor 93 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   18% 2691/com.android.systemui: 6.3% user + 11% kernel / faults: 4906 minor 42 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   11% 2709/com.android.phone: 3.6% user + 8.1% kernel / faults: 3762 minor 8 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   7.4% 869/com.android.permissioncontroller: 3.5% user + 3.9% kernel / faults: 1132 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   5.4% 1132/com.android.launcher3: 1.5% user + 3.8% kernel / faults: 1445 minor 1 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   4.2% 388/android.hardware.sensors@2.1-service.multihal: 1.2% user + 2.9% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   3% 469/mediaserver: 0.4% user + 2.6% kernel / faults: 3 minor 165 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   2.9% 1490/com.android.providers.media.module: 0.6% user + 2.3% kernel / faults: 1558 minor 14 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   2.7% 415/surfaceflinger: 1% user + 1.6% kernel / faults: 697 minor 1 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   2.4% 204/logd: 0.5% user + 1.9% kernel / faults: 266 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   2.2% 467/media.extractor: 0.8% user + 1.4% kernel / faults: 184 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   2.2% 370/kworker/u4:5-kverityd: 0% user + 2.2% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.5% 475/media.swcodec: 0.2% user + 0.2% kernel / faults: 95 minor 9 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   1.9% 1/init: 0.4% user + 1.4% kernel / faults: 1 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   1.8% 1025/com.android.networkstack.process: 0.6% user + 1.1% kernel / faults: 480 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.4% 7/kworker/u4:0-kverityd: 0% user + 0.4% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   1.4% 382/android.hardware.graphics.composer@2.4-service: 0.5% user + 0.8% kernel / faults: 1 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   1.1% 13/rcu_preempt: 0% user + 1.1% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   1% 459/logcat: 0.1% user + 0.9% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.9% 363/netd: 0.2% user + 0.6% kernel / faults: 136 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.9% 745/kworker/1:0-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.8% 472/libgoldfish-rild: 0.2% user + 0.6% kernel / faults: 1 minor 4 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.7% 258/jbd2/dm-32-8: 0% user + 0.7% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.6% 378/kworker/u4:6-kverityd: 0% user + 0.6% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.6% 1567/android.process.acore: 0.4% user + 0.2% kernel / faults: 37 minor 1 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.4% 1066/com.android.se: 0.1% user + 0.2% kernel / faults: 170 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.6% 471/wificond: 0.2% user + 0.3% kernel / faults: 5 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.3% 1524/com.android.emulator.multidisplay: 0.1% user + 0.2% kernel / faults: 204 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.5% 206/servicemanager: 0.1% user + 0.3% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.5% 362/statsd: 0.1% user + 0.4% kernel / faults: 128 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.4% 454/adbd: 0.1% user + 0.2% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.3% 2259/app_process: 0.1% user + 0.2% kernel / faults: 67 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.3% 12/ksoftirqd/0: 0% user + 0.3% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 2061/com.android.cellbroadcastreceiver.module: 0% user + 0% kernel / faults: 89 minor 5 major
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.2% 498/mdnsd: 0% user + 0.1% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 266/tombstoned: 0% user + 0% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 468/media.metrics: 0% user + 0.1% kernel / faults: 36 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 859/wpa_supplicant: 0% user + 0% kernel / faults: 2 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 404/audioserver: 0% user + 0.1% kernel / faults: 20 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 1400/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 66 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 205/lmkd: 0% user + 0% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 384/android.hardware.media.c2@1.0-service-goldfish: 0% user + 0% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 40 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 214/vold: 0% user + 0% kernel / faults: 31 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 406/iptables-restore: 0% user + 0% kernel / faults: 2 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0.1% 1541/com.android.documentsui: 0% user + 0% kernel / faults: 10 minor
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:11:59.613   584  2800 E ActivityManager:   0% 383/android.hardware.health@2.1-service: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 104/kswapd0: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 227/keystore2: 0% user + 0% kernel / faults: 18 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 407/ip6tables-restore: 0% user + 0% kernel / faults: 1 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 1337/android.ext.services: 0% user + 0% kernel / faults: 21 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 226/android.system.suspend@1.0-service: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 462/cameraserver: 0% user + 0% kernel / faults: 4 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 2528/com.android.remoteprovisioner: 0% user + 0% kernel / faults: 8 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 2638/com.android.statementservice: 0% user + 0% kernel / faults: 34 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 326/kworker/u5:2-blk_crypto_wq: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 408/gpuservice: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 481/android.hardware.biometrics.fingerprint@2.1-service: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   0% 1089/com.android.settings: 0% user + 0% kernel / faults: 12 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:  +0% 2915/crash_dump64: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager: 98% TOTAL: 33% user + 59% kernel + 0% iowait + 3.6% irq + 2.2% softirq
+10-10 07:11:59.618   584  2800 E ActivityManager: CPU usage from 1707ms to 16157ms later (2026-10-10 07:11:16.887 to 2026-10-10 07:11:31.337):
+10-10 07:11:59.618   584  2800 E ActivityManager:   58% 584/system_server: 18% user + 39% kernel / faults: 1983 minor 10 major
+10-10 07:11:59.618   584  2800 E ActivityManager:     13% 2800/AnrConsumer: 1.8% user + 11% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     5% 2258/binder:584_17: 1.9% user + 3% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     3.9% 2686/binder:584_18: 1.7% user + 2.2% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     3.5% 920/binder:584_8: 0.8% user + 2.6% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     3.1% 596/HeapTaskDaemon: 0.8% user + 2.3% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     2.9% 601/binder:584_2: 1.5% user + 1.4% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     2.6% 918/binder:584_6: 0.8% user + 1.7% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     2.5% 1453/binder:584_F: 0.6% user + 1.8% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     2.4% 584/system_server: 0.9% user + 1.4% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.8% 608/android.display: 0.9% user + 0.8% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.6% 606/android.ui: 0.9% user + 0.6% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.5% 595/Jit thread pool: 0.3% user + 1.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.3% 673/SensorService: 0.4% user + 0.8% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.3% 802/WifiHandlerThre: 0.4% user + 0.8% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.3% 1491/binder:584_15: 0.3% user + 0.9% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1% 1133/binder:584_C: 0.5% user + 0.5% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1% 2706/binder:584_1A: 0.4% user + 0.6% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.9% 658/binder:584_3: 0.5% user + 0.4% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.9% 1020/binder:584_B: 0.4% user + 0.5% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.8% 616/ActivityManager: 0.3% user + 0.4% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.7% 615/android.bg: 0% user + 0.6% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.6% 953/AsyncTask #1: 0% user + 0.5% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.5% 609/android.anim: 0.1% user + 0.3% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.3% 1024/NetworkTimeUpda: 0% user + 0.2% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.2% 809/ConnectivitySer: 0% user + 0.2% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.2% 1838/LazyTaskWriterT: 0% user + 0.2% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 605/android.fg: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 621/batterystats-ha: 0% user + 0.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 800/NetworkPolicy: 0.1% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 597/ReferenceQueueD: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 598/FinalizerDaemon: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 620/OomAdjuster: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 632/PowerManagerSer: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 685/AlarmManager: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 697/android.imms: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 801/tworkPolicy.uid: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 814/VcnManagementSe: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0% 815/ranker: 0% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   54% 2355/cn.jiang.opennote: 32% user + 22% kernel / faults: 482 minor
+10-10 07:11:59.618   584  2800 E ActivityManager:     54% 2355/.jiang.opennote: 32% user + 22% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2836/binder:2355_3: 0.1% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:   21% 2691/com.android.systemui: 8.6% user + 13% kernel / faults: 231 minor 15 major
+10-10 07:11:59.618   584  2800 E ActivityManager:     5.3% 2691/ndroid.systemui: 1.1% user + 4.2% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     4% 2860/SoundDecoder_1: 1.5% user + 2.5% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     1.3% 2866/HwBinder:2691_1: 0.9% user + 0.3% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2738/SysUiBg: 0% user + 0.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2748/LogBuffer-Keygu: 0.1% user + 0% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2831/binder:2691_6: 0% user + 0.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2839/binder:2691_7: 0% user + 0.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:     0.1% 2864/NDK MediaCodec_: 0% user + 0.1% kernel
+10-10 07:11:59.618   584  2800 E ActivityManager:    +0% 2868/pool-4-thread-1: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2873/NDK MediaCodec_: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   9.6% 869/com.android.permissioncontroller: 4.9% user + 4.7% kernel / faults: 215 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     8.6% 1816/RoleControllerS: 4.2% user + 4.3% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.7% 885/Jit thread pool: 0.4% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   4.9% 1132/com.android.launcher3: 0.9% user + 4% kernel / faults: 251 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     3.8% 1175/launcher-loader: 0.7% user + 3.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.4% 1141/HeapTaskDaemon: 0.1% user + 0.3% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 1143/FinalizerDaemon: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 1489/queued-work-loo: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   8.3% 2709/com.android.phone: 3.5% user + 4.7% kernel / faults: 213 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     5.4% 2709/m.android.phone: 2% user + 3.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.8% 2746/binder:2709_4: 0.3% user + 0.5% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.6% 2721/binder:2709_2: 0.1% user + 0.5% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.3% 2797/binder:2709_7: 0.3% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 2720/binder:2709_1: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 2722/binder:2709_3: 0.1% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 2849/binder:2709_8: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2871/binder:2709_9: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   3.9% 388/android.hardware.sensors@2.1-service.multihal: 1.1% user + 2.8% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     3.1% 417/sensors@2.1-ser: 1% user + 2.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.7% 418/sensors@2.1-ser: 0.1% user + 0.6% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   4% 475/media.swcodec: 2.1% user + 1.8% kernel / faults: 26 minor 3 major
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.8% 903/HwBinder:475_3: 0.6% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.8% 514/HwBinder:475_1: 0.2% user + 0.5% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.4% 1452/HwBinder:475_8: 0.1% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 1266/HwBinder:475_7: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   3.5% 469/mediaserver: 0.2% user + 3.2% kernel / faults: 33 major
+10-10 07:11:59.620   584  2800 E ActivityManager:     2.9% 2503/binder:469_4: 0.1% user + 2.7% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 557/binder:469_1: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 944/binder:469_2: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 1676/binder:469_3: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 2707/binder:469_6: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 469/mediaserver: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   2.5% 1/init: 0.4% user + 2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     1.9% 159/init: 0.2% user + 1.6% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.6% 1/init: 0.2% user + 0.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   2.8% 204/logd: 0.6% user + 2.2% kernel / faults: 137 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     2.1% 217/logd.writer: 0.5% user + 1.6% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.6% 479/logd.reader.per: 0% user + 0.5% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   2.3% 467/media.extractor: 0.8% user + 1.5% kernel / faults: 13 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     2.1% 2467/binder:467_4: 0.6% user + 1.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.3% 467/mediaextractor: 0.2% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   3% 1567/android.process.acore: 2% user + 0.9% kernel / faults: 25 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     3.1% 1702/binder:1567_3: 2.1% user + 0.9% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.7% 370/kworker/u4:5-phy1: 0% user + 1.7% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.8% 378/kworker/u4:6-phy1: 0% user + 1.8% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.2% 13/rcu_preempt: 0% user + 1.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.5% 415/surfaceflinger: 0.5% user + 0.9% kernel / faults: 12 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.5% 415/surfaceflinger: 0.2% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 521/TimerDispatch: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 851/binder:415_5: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 513/surfaceflinger: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 519/HwBinder:415_1: 0.1% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 522/app: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 525/RegSampIdle: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 637/binder:415_3: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.7% 1490/com.android.providers.media.module: 0.3% user + 1.4% kernel / faults: 28 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     1.5% 1933/AsyncTask #1: 0.3% user + 1.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1% 258/jbd2/dm-32-8: 0% user + 1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.9% 459/logcat: 0% user + 0.8% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.9% 745/kworker/1:0-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.9% 382/android.hardware.graphics.composer@2.4-service: 0% user + 0.8% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.8% 420/display_0_vsync: 0% user + 0.8% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 382/composer@2.4-se: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.9% 1025/com.android.networkstack.process: 0.2% user + 0.6% kernel / faults: 28 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.3% 1196/IpClient.wlan0: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 1834/NetworkMonitor/: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 1048/droid.tethering: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   1.4% 2320/com.android.messaging: 0.8% user + 0.5% kernel / faults: 14 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 2320/droid.messaging: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2870/AsyncTask #7: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.6% 472/libgoldfish-rild: 0.1% user + 0.4% kernel / faults: 1 minor 3 major
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.5% 472/libgoldfish-ril: 0% user + 0.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 506/libgoldfish-ril: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.4% 111/kworker/0:2-events: 0% user + 0.4% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.5% 206/servicemanager: 0.1% user + 0.3% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.4% 362/statsd: 0% user + 0.3% kernel / faults: 1 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 412/statsd.writer: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 380/binder:362_2: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.4% 859/wpa_supplicant: 0% user + 0.4% kernel / faults: 2 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.3% 363/netd: 0% user + 0.3% kernel / faults: 22 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2846/Dns_100_1000: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2847/Dns_100_1000: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:    +0% 2848/Dns_100_1000: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.3% 454/adbd: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 482/adbd: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 486/adbd: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.3% 468/media.metrics: 0% user + 0.3% kernel / faults: 25 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.3% 468/mediametrics: 0% user + 0.3% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 1206/binder:468_5: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.4% 1541/com.android.documentsui: 0.1% user + 0.3% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.2% 384/android.hardware.media.c2@1.0-service-goldfish: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 933/HwBinder:384_4: 0% user + 0.2% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.2% 471/wificond: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.2% 471/wificond: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.1% 207/hwservicemanager: 0% user + 0.1% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 395/wifi@1.0-servic: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 856/wifi@1.0-servic: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0.1% 404/audioserver: 0.1% user + 0% kernel / faults: 12 minor
+10-10 07:11:59.620   584  2800 E ActivityManager:     0.1% 659/binder:404_3: 0.1% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 226/android.system.suspend@1.0-service: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 231/binder:226_1: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:     0% 381/allocator@3.0-s: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 408/gpuservice: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager:   0% 481/android.hardware.biometrics.fingerprint@2.1-service: 0% user + 0% kernel
+10-10 07:11:59.620   584  2800 E ActivityManager: 99% TOTAL: 27% user + 65% kernel + 3.9% irq + 2.4% softirq
+10-10 07:13:08.562   584  2974 E ActivityManager: Aborting stack trace dump (current firstPid=1025); deadline exceeded.
+10-10 07:13:12.873   584  2974 E ActivityManager: ANR in com.android.systemui
+10-10 07:13:12.873   584  2974 E ActivityManager: PID: 2928
+10-10 07:13:12.873   584  2974 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:13:12.873   584  2974 E ActivityManager: ErrorId: b362a434-1316-43cb-a225-b6c7a2e0a2a5
+10-10 07:13:12.873   584  2974 E ActivityManager: Frozen: false
+10-10 07:13:12.873   584  2974 E ActivityManager: Load: 14.06 / 11.15 / 5.65
+10-10 07:13:12.873   584  2974 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:13:12.873   584  2974 E ActivityManager: some avg10=0.30 avg60=0.54 avg300=0.68 total=4245751
+10-10 07:13:12.873   584  2974 E ActivityManager: full avg10=0.09 avg60=0.25 avg300=0.32 total=2266169
+10-10 07:13:12.873   584  2974 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:13:12.873   584  2974 E ActivityManager: 
+10-10 07:13:12.873   584  2974 E ActivityManager: CPU usage from 1ms to 43168ms later (2026-10-10 07:12:25.397 to 2026-10-10 07:13:08.564):
+10-10 07:13:12.873   584  2974 E ActivityManager:   66% 2355/cn.jiang.opennote: 32% user + 34% kernel / faults: 7434 minor 69 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   42% 584/system_server: 14% user + 27% kernel / faults: 4320 minor 3 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   10% 415/surfaceflinger: 4.4% user + 6.4% kernel / faults: 359 minor 6 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   10% 2928/com.android.systemui: 3.9% user + 6.6% kernel / faults: 3550 minor 5 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   6.4% 2709/com.android.phone: 2.3% user + 4.1% kernel / faults: 1399 minor 6 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   6.2% 382/android.hardware.graphics.composer@2.4-service: 2.6% user + 3.5% kernel / faults: 6 minor 6 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   6% 1025/com.android.networkstack.process: 1.8% user + 4.2% kernel / faults: 1574 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   4.1% 869/com.android.permissioncontroller: 1.4% user + 2.7% kernel / faults: 652 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   4% 388/android.hardware.sensors@2.1-service.multihal: 1% user + 2.9% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   3.7% 1132/com.android.launcher3: 1.5% user + 2.2% kernel / faults: 648 minor 5 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.4% 363/netd: 0.5% user + 0.9% kernel / faults: 289 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   2% 204/logd: 0.3% user + 1.6% kernel / faults: 68 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.7% 7/kworker/u4:0-kverityd: 0% user + 1.7% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.4% 370/kworker/u4:5-kverityd: 0% user + 1.4% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.2% 1/init: 0.3% user + 0.8% kernel / faults: 2 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.1% 469/mediaserver: 0.2% user + 0.9% kernel / faults: 26 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   1.1% 745/kworker/1:0-virtio_vsock: 0% user + 1.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   1% 459/logcat: 0.1% user + 0.9% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   1% 13/rcu_preempt: 0% user + 1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   1% 104/kswapd0: 0% user + 1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.8% 2061/com.android.cellbroadcastreceiver.module: 0.2% user + 0.5% kernel / faults: 327 minor 2 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.8% 111/kworker/0:2-events: 0% user + 0.8% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.7% 1066/com.android.se: 0.3% user + 0.3% kernel / faults: 162 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.6% 471/wificond: 0.3% user + 0.3% kernel / faults: 8 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.6% 467/media.extractor: 0.2% user + 0.3% kernel / faults: 20 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.6% 1490/com.android.providers.media.module: 0.1% user + 0.4% kernel / faults: 39 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.6% 1524/com.android.emulator.multidisplay: 0.2% user + 0.3% kernel / faults: 164 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.5% 1567/android.process.acore: 0.2% user + 0.3% kernel / faults: 93 minor 1 major
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.5% 258/jbd2/dm-32-8: 0% user + 0.5% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.4% 498/mdnsd: 0% user + 0.4% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.4% 362/statsd: 0.1% user + 0.3% kernel / faults: 8 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.3% 206/servicemanager: 0.1% user + 0.2% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.2% 859/wpa_supplicant: 0% user + 0.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.3% 12/ksoftirqd/0: 0% user + 0.3% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.2% 475/media.swcodec: 0.1% user + 0.1% kernel / faults: 9 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 2109/com.android.cellbroadcastreceiver: 0% user + 0% kernel / faults: 80 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.2% 205/lmkd: 0% user + 0.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 406/iptables-restore: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.2% 454/adbd: 0% user + 0.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 2528/com.android.remoteprovisioner: 0% user + 0% kernel / faults: 26 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0.1% kernel / faults: 38 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 398/android.hardware.power-service.example: 0% user + 0.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 407/ip6tables-restore: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 266/tombstoned: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 472/libgoldfish-rild: 0% user + 0.1% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0.1% 1541/com.android.documentsui: 0% user + 0.1% kernel / faults: 50 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 2638/com.android.statementservice: 0% user + 0% kernel / faults: 25 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 24/ksoftirqd/1: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 364/zygote64: 0% user + 0% kernel / faults: 43 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 462/cameraserver: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 1913/com.android.dialer: 0% user + 0% kernel / faults: 11 minor
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 383/android.hardware.health@2.1-service: 0% user + 0% kernel
+10-10 07:13:12.873   584  2974 E ActivityManager:   0% 384/android.hardware.media.c2@1.0-service-goldfish: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 2259/app_process: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 2279/com.android.imsserviceentitlement: 0% user + 0% kernel / faults: 49 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 112/kworker/0:1H-kblockd: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 162/ueventd: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 404/audioserver: 0% user + 0% kernel / faults: 5 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 468/media.metrics: 0% user + 0% kernel / faults: 5 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 214/vold: 0% user + 0% kernel / faults: 16 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 253/kworker/u5:1-blk_crypto_wq: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 378/kworker/u4:6-kverityd: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 457/traced: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   0% 1793/com.android.provision: 0% user + 0% kernel / faults: 11 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:  +0% 2994/com.android.carrierconfig: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:  +0% 3032/kworker/u5:0: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:  +0% 3063/crash_dump64: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager: 98% TOTAL: 35% user + 56% kernel + 0% iowait + 4% irq + 1.9% softirq
+10-10 07:13:12.889   584  2974 E ActivityManager: CPU usage from 1788ms to 19894ms later (2026-10-10 07:12:27.184 to 2026-10-10 07:12:45.290):
+10-10 07:13:12.889   584  2974 E ActivityManager:   44% 584/system_server: 15% user + 28% kernel / faults: 1277 minor 1 major
+10-10 07:13:12.889   584  2974 E ActivityManager:     8.2% 2974/AnrConsumer: 1.6% user + 6.6% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     3.2% 809/ConnectivitySer: 1.2% user + 1.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.3% 584/system_server: 1.1% user + 1.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.3% 802/WifiHandlerThre: 0.7% user + 1.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.1% 1281/binder:584_D: 0.9% user + 1.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.9% 2236/binder:584_16: 0.8% user + 1.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.8% 658/binder:584_3: 0.5% user + 1.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.6% 2706/binder:584_1A: 0.6% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.5% 606/android.ui: 0.5% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.5% 1491/binder:584_15: 0.6% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.5% 2705/binder:584_19: 0.7% user + 0.8% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.2% 800/NetworkPolicy: 0.6% user + 0.6% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.2% 1458/binder:584_13: 0.5% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.2% 1456/binder:584_11: 0.5% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1% 1453/binder:584_F: 0.3% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1% 2258/binder:584_17: 0.3% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 673/SensorService: 0.1% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 2927/binder:584_1B: 0.1% user + 0.6% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.6% 616/ActivityManager: 0.1% user + 0.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.5% 621/batterystats-ha: 0.4% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.5% 828/ConnectivityThr: 0.1% user + 0.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.4% 595/Jit thread pool: 0.1% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 615/android.bg: 0% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 966/binder:584_A: 0.1% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 609/android.anim: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 798/SkDestroyListen: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 806/WifiScanningSer: 0.1% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 605/android.fg: 0.1% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 685/AlarmManager: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 803/WifiDiagnostics: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 1024/NetworkTimeUpda: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 617/ActivityManager: 0.1% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 632/PowerManagerSer: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 665/binder:584_4: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 1457/binder:584_12: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 2977/AsyncTask #2: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 607/android.io: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 620/OomAdjuster: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 641/PackageManager: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 674/jobscheduler.bg: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 691/InputDispatcher: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 695/NetworkWatchlis: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 799/NetworkStats: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 807/WifiManagerThre: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 814/VcnManagementSe: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 861/binder:584_5: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 918/binder:584_6: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 956/HwBinder:584_3: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 1454/binder:584_10: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 2686/binder:584_18: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3026/process reaper: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   61% 2355/cn.jiang.opennote: 32% user + 28% kernel / faults: 1781 minor 18 major
+10-10 07:13:12.889   584  2974 E ActivityManager:     37% 2355/.jiang.opennote: 21% user + 15% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     7.2% 2855/pool-3-thread-1: 2.8% user + 4.4% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     7% 2837/RenderThread: 3.9% user + 3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     4.7% 2362/Jit thread pool: 1.4% user + 3.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.6% 2504/roidJUnitRunner: 0.6% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.4% 2368/binder:2355_2: 0.1% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 2842/binder:2355_4: 0.1% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 2884/binder:2355_1: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 2978/binder:2355_6: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   8.4% 415/surfaceflinger: 3.1% user + 5.3% kernel / faults: 32 minor 2 major
+10-10 07:13:12.889   584  2974 E ActivityManager:     3% 415/surfaceflinger: 1.4% user + 1.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.4% 519/HwBinder:415_1: 0.4% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 509/binder:415_1: 0.1% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 521/TimerDispatch: 0.1% user + 0.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.6% 522/app: 0.1% user + 0.4% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.5% 530/surfaceflinger: 0.3% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 637/binder:415_3: 0.1% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 526/surfaceflinger: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 513/surfaceflinger: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 523/appSf: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 525/RegSampIdle: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 524/RegionSampling: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   7.5% 1025/com.android.networkstack.process: 2.3% user + 5.2% kernel / faults: 456 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.3% 1196/IpClient.wlan0: 0.8% user + 1.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     2% 1319/pool-2-thread-1: 0.3% user + 1.6% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.7% 1032/HeapTaskDaemon: 0.3% user + 0.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 1041/binder:1025_3: 0.1% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 1048/droid.tethering: 0% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 1195/binder:1025_4: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 1025/rkstack.process: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 1047/NetworkStackNot: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   5.8% 869/com.android.permissioncontroller: 1.8% user + 4% kernel / faults: 119 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     5.1% 1816/RoleControllerS: 1.6% user + 3.4% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.7% 2964/RoleControllerS: 0.1% user + 0.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   4.4% 382/android.hardware.graphics.composer@2.4-service: 1.8% user + 2.5% kernel / faults: 2 minor 2 major
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.9% 382/composer@2.4-se: 1.2% user + 1.6% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.5% 420/display_0_vsync: 0.5% user + 0.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   4% 388/android.hardware.sensors@2.1-service.multihal: 1.1% user + 2.9% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     3.1% 417/sensors@2.1-ser: 0.7% user + 2.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 418/sensors@2.1-ser: 0.3% user + 0.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   3.6% 363/netd: 1.2% user + 2.4% kernel / faults: 199 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.1% 363/binder:363_4: 0.2% user + 0.8% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 438/netd: 0.4% user + 0.4% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.3% 448/binder:363_2: 0.1% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 2098/binder:363_5: 0.1% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 445/doh-handler: 0.1% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.1% 446/netd: 0% user + 0.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0% 409/netd: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   4.4% 1132/com.android.launcher3: 1.8% user + 2.6% kernel / faults: 381 minor 2 major
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.1% 1132/droid.launcher3: 1.1% user + 1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.1% 1819/RenderThread: 0.2% user + 0.8% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.4% 1141/HeapTaskDaemon: 0.2% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3015/android.bg: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   2.4% 204/logd: 0.5% user + 1.8% kernel / faults: 15 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.8% 217/logd.writer: 0.5% user + 1.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.6% 479/logd.reader.per: 0% user + 0.5% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   1.9% 1/init: 0.5% user + 1.4% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.4% 159/init: 0.3% user + 1.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.4% 1/init: 0.2% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   9.6% 2709/com.android.phone: 3% user + 6.6% kernel / faults: 91 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     4.4% 2709/m.android.phone: 1.1% user + 3.3% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     2.2% 2966/binder:2709_A: 1.1% user + 1.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.6% 2721/binder:2709_2: 0.5% user + 1.1% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     1.1% 2746/binder:2709_4: 0.2% user + 0.8% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.8% 2871/binder:2709_9: 0.5% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.2% 2756/ConnectivityThr: 0.2% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   1.8% 370/kworker/u4:5-phy1: 0% user + 1.8% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:   7.2% 2928/com.android.systemui: 3.3% user + 3.9% kernel / faults: 191 minor
+10-10 07:13:12.889   584  2974 E ActivityManager:     5.8% 2928/ndroid.systemui: 3% user + 2.7% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:     0.5% 2954/SysUiBg: 0.2% user + 0.2% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3033/LogBuffer-Statu: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3034/ConnectivityThr: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3036/LogBuffer-Notif: 0% user + 0% kernel
+10-10 07:13:12.889   584  2974 E ActivityManager:    +0% 3037/LogBuffer-LSSha: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:    +0% 3038/LogBuffer-Media: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   1.2% 7/kworker/u4:0-phy1: 0% user + 1.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   1.3% 469/mediaserver: 0.3% user + 1% kernel / faults: 9 major
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.6% 2707/binder:469_6: 0.1% user + 0.5% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.3% 1676/binder:469_3: 0.1% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.3% 557/binder:469_1: 0% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   1.2% 459/logcat: 0.2% user + 0.9% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   1.2% 471/wificond: 0.7% user + 0.5% kernel / faults: 6 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     1.2% 471/wificond: 0.7% user + 0.5% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.9% 13/rcu_preempt: 0% user + 0.9% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   1.2% 745/kworker/1:0-virtio_vsock: 0% user + 1.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.9% 111/kworker/0:2-events: 0% user + 0.9% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.6% 467/media.extractor: 0.2% user + 0.3% kernel / faults: 9 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.5% 2467/binder:467_4: 0.1% user + 0.3% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.5% 258/jbd2/dm-32-8: 0% user + 0.5% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.5% 362/statsd: 0.2% user + 0.2% kernel / faults: 3 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.4% 412/statsd.writer: 0.2% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.1% 380/binder:362_2: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.5% 498/mdnsd: 0% user + 0.5% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.4% 206/servicemanager: 0.1% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.4% 1490/com.android.providers.media.module: 0.1% user + 0.3% kernel / faults: 8 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.4% 1933/AsyncTask #1: 0% user + 0.3% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.3% 454/adbd: 0% user + 0.3% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 482/adbd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 486/adbd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 494/adbd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.5% 2061/com.android.cellbroadcastreceiver.module: 0.2% user + 0.3% kernel / faults: 10 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.4% 2892/IntentService[C: 0.2% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.2% 104/kswapd0: 0% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.2% 364/zygote64: 0% user + 0.2% kernel / faults: 43 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.2% 406/iptables-restore: 0.1% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.2% 407/ip6tables-restore: 0% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0.1% kernel / faults: 38 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.1% 395/wifi@1.0-servic: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 398/android.hardware.power-service.example: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 472/libgoldfish-rild: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.1% 472/libgoldfish-ril: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.2% 859/wpa_supplicant: 0% user + 0.2% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.5% 2528/com.android.remoteprovisioner: 0.1% user + 0.3% kernel / faults: 6 minor
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 112/kworker/0:1H-kblockd: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 162/ueventd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 462/cameraserver: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 667/binder:462_2: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 24/ksoftirqd/1: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 205/lmkd: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.1% 205/lmkd: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 253/kworker/u5:1-blk_crypto_wq: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 381/allocator@3.0-s: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 457/traced: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0% 1042/gnss@2.0-servic: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0% 1524/com.android.emulator.multidisplay: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:   0.1% 2259/app_process: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:     0.1% 2259/main: 0% user + 0.1% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:  +0% 2994/com.android.carrierconfig: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager:  +0% 3032/kworker/u5:0: 0% user + 0% kernel
+10-10 07:13:12.893   584  2974 E ActivityManager: 97% TOTAL: 36% user + 55% kernel + 0% iowait + 3.8% irq + 2% softirq
+10-10 07:13:31.028   584  3124 E ActivityManager: ANR in com.android.phone
+10-10 07:13:31.028   584  3124 E ActivityManager: PID: 2709
+10-10 07:13:31.028   584  3124 E ActivityManager: Reason: Broadcast of Intent { act=android.telephony.action.CARRIER_CONFIG_CHANGED flg=0x15000010 cmp=com.android.ons/.ONSProfileResultReceiver (has extras) }
+10-10 07:13:31.028   584  3124 E ActivityManager: ErrorId: 5d7a38f0-13bf-4d3a-9ddb-544c929fdea8
+10-10 07:13:31.028   584  3124 E ActivityManager: Frozen: false
+10-10 07:13:31.028   584  3124 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+10-10 07:13:31.028   584  3124 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:13:31.028   584  3124 E ActivityManager: some avg10=0.83 avg60=0.77 avg300=0.70 total=4749829
+10-10 07:13:31.028   584  3124 E ActivityManager: full avg10=0.38 avg60=0.36 avg300=0.33 total=2500651
+10-10 07:13:31.028   584  3124 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:13:31.028   584  3124 E ActivityManager: 
+10-10 07:13:31.028   584  3124 E ActivityManager: CPU usage from 1ms to 7191ms later (2026-10-10 07:13:21.257 to 2026-10-10 07:13:28.447):
+10-10 07:13:31.028   584  3124 E ActivityManager:   56% 2355/cn.jiang.opennote: 27% user + 29% kernel / faults: 726 minor 16 major
+10-10 07:13:31.028   584  3124 E ActivityManager:   34% 3101/com.android.messaging: 15% user + 19% kernel / faults: 4371 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   32% 584/system_server: 9.1% user + 23% kernel / faults: 374 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   13% 2709/com.android.phone: 4.1% user + 9.1% kernel / faults: 592 minor 3 major
+10-10 07:13:31.028   584  3124 E ActivityManager:   10% 415/surfaceflinger: 4.6% user + 5.9% kernel / faults: 1 minor 1 major
+10-10 07:13:31.028   584  3124 E ActivityManager:   6.4% 3125/com.android.systemui: 2.5% user + 3.9% kernel / faults: 1089 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   4.5% 388/android.hardware.sensors@2.1-service.multihal: 1% user + 3.5% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   3.6% 869/com.android.permissioncontroller: 0.9% user + 2.7% kernel / faults: 46 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   1.3% 1567/android.process.acore: 0.6% user + 0.7% kernel / faults: 117 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   2.6% 1132/com.android.launcher3: 1.1% user + 1.5% kernel / faults: 672 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   2.1% 7/kworker/u4:0-kverityd: 0% user + 2.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   2% 382/android.hardware.graphics.composer@2.4-service: 0.7% user + 1.3% kernel / faults: 1 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   1.7% 1/init: 0.4% user + 1.3% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.5% 378/kworker/u4:6-kverityd: 0% user + 0.5% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   1.1% 1490/com.android.providers.media.module: 0.5% user + 0.5% kernel / faults: 67 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   1% 13/rcu_preempt: 0% user + 1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   1% 204/logd: 0% user + 1% kernel / faults: 2 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.9% 459/logcat: 0.3% user + 0.6% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.8% 3123/kworker/1:1-virtio_vsock: 0% user + 0.8% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.7% 471/wificond: 0.3% user + 0.4% kernel / faults: 2 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.6% 1025/com.android.networkstack.process: 0.1% user + 0.4% kernel / faults: 80 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.4% 370/kworker/u4:5-kverityd: 0% user + 0.4% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.4% 454/adbd: 0.1% user + 0.2% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.4% 469/mediaserver: 0.3% user + 0.1% kernel / faults: 2 major
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.2% 206/servicemanager: 0.1% user + 0.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.2% 258/jbd2/dm-32-8: 0% user + 0.2% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.2% 395/android.hardware.wifi@1.0-service: 0.1% user + 0.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0% 1089/com.android.settings: 0% user + 0% kernel / faults: 4 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.1% 12/ksoftirqd/0: 0% user + 0.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.1% 205/lmkd: 0% user + 0.1% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0% 266/tombstoned: 0% user + 0% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.1% 362/statsd: 0% user + 0.1% kernel / faults: 3 minor
+10-10 07:13:31.028   584  3124 E ActivityManager:   0.1% 363/netd: 0.1% user + 0% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0% 404/audioserver: 0% user + 0% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager:   0% 2259/app_process: 0% user + 0% kernel
+10-10 07:13:31.028   584  3124 E ActivityManager: 100% TOTAL: 34% user + 58% kernel + 4.2% irq + 2% softirq
+10-10 07:13:31.028   584  3124 E ActivityManager: CPU usage from 747994ms to 747994ms ago (1970-01-01 07:00:00.000 to 1970-01-01 07:00:00.000) with 0% awake:
+10-10 07:13:31.028   584  3124 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+10-10 07:14:32.700   584  3236 E ActivityManager: Aborting stack trace dump (current native pid=462); deadline exceeded.
+10-10 07:14:36.313   584  3236 E ActivityManager: ANR in com.android.systemui
+10-10 07:14:36.313   584  3236 E ActivityManager: PID: 3125
+10-10 07:14:36.313   584  3236 E ActivityManager: Reason: executing service com.android.systemui/.SystemUIService
+10-10 07:14:36.313   584  3236 E ActivityManager: ErrorId: f74055e2-e499-498e-bf91-76075898ec84
+10-10 07:14:36.313   584  3236 E ActivityManager: Frozen: false
+10-10 07:14:36.313   584  3236 E ActivityManager: Load: 15.92 / 12.55 / 6.6
+10-10 07:14:36.313   584  3236 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:14:36.313   584  3236 E ActivityManager: some avg10=0.11 avg60=0.55 avg300=0.65 total=4749829
+10-10 07:14:36.313   584  3236 E ActivityManager: full avg10=0.05 avg60=0.25 avg300=0.30 total=2500651
+10-10 07:14:36.313   584  3236 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:14:36.313   584  3236 E ActivityManager: 
+10-10 07:14:36.313   584  3236 E ActivityManager: CPU usage from 1ms to 48792ms later (2026-10-10 07:13:43.916 to 2026-10-10 07:14:32.707):
+10-10 07:14:36.313   584  3236 E ActivityManager:   41% 584/system_server: 15% user + 26% kernel / faults: 9769 minor 11 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   21% 3125/com.android.systemui: 8.5% user + 12% kernel / faults: 10960 minor 38 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   12% 3164/com.android.phone: 4.7% user + 7.5% kernel / faults: 4263 minor 3 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   7.1% 1132/com.android.launcher3: 2.9% user + 4.1% kernel / faults: 1214 minor 1 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   6.5% 415/surfaceflinger: 2.6% user + 3.9% kernel / faults: 730 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   2.8% 104/kswapd0: 0% user + 2.8% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   3.9% 388/android.hardware.sensors@2.1-service.multihal: 1% user + 2.8% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   3.3% 3224/cn.jiang.opennote.test: 1.4% user + 1.9% kernel / faults: 4889 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   3% 382/android.hardware.graphics.composer@2.4-service: 1% user + 2% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   2.3% 204/logd: 0.6% user + 1.7% kernel / faults: 106 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   2.1% 469/mediaserver: 0.4% user + 1.7% kernel / faults: 66 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   1.8% 1490/com.android.providers.media.module: 0.5% user + 1.3% kernel / faults: 395 minor 5 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   1.8% 1025/com.android.networkstack.process: 0.6% user + 1.1% kernel / faults: 1478 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   1% 378/kworker/u4:6-kverityd: 0% user + 1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   1.3% 7/kworker/u4:0-kverityd: 0% user + 1.3% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   1.3% 467/media.extractor: 0.4% user + 0.9% kernel / faults: 47 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   1.1% 13/rcu_preempt: 0% user + 1.1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.7% 475/media.swcodec: 0.2% user + 0.4% kernel / faults: 77 minor 9 major
+10-10 07:14:36.313   584  3236 E ActivityManager:   1% 3123/kworker/1:1-virtio_vsock: 0% user + 1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   1% 459/logcat: 0.2% user + 0.8% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.8% 370/kworker/u4:5-kverityd: 0% user + 0.8% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.8% 472/libgoldfish-rild: 0.2% user + 0.5% kernel / faults: 2 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.8% 3101/com.android.messaging: 0.3% user + 0.4% kernel / faults: 70 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.7% 1567/android.process.acore: 0.3% user + 0.4% kernel / faults: 59 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.7% 363/netd: 0.2% user + 0.5% kernel / faults: 332 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.6% 206/servicemanager: 0.2% user + 0.4% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.6% 111/kworker/0:2-events: 0% user + 0.6% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.4% 362/statsd: 0.1% user + 0.3% kernel / faults: 117 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.2% 1524/com.android.emulator.multidisplay: 0% user + 0.2% kernel / faults: 164 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.2% 1066/com.android.se: 0.1% user + 0.1% kernel / faults: 163 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.4% 454/adbd: 0% user + 0.3% kernel / faults: 916 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.3% 258/jbd2/dm-32-8: 0% user + 0.3% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.3% 1/init: 0.1% user + 0.2% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.2% 205/lmkd: 0% user + 0.1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.2% 471/wificond: 0% user + 0.1% kernel / faults: 2 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 266/tombstoned: 0% user + 0.1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0% kernel / faults: 38 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 404/audioserver: 0% user + 0.1% kernel / faults: 73 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 462/cameraserver: 0% user + 0.1% kernel / faults: 59 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 227/keystore2: 0% user + 0.1% kernel / faults: 22 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 468/media.metrics: 0% user + 0% kernel / faults: 9 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 2061/com.android.cellbroadcastreceiver.module: 0% user + 0% kernel / faults: 15 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 364/zygote64: 0% user + 0.1% kernel / faults: 43 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 214/vold: 0% user + 0% kernel / faults: 42 minor
+10-10 07:14:36.313   584  3236 E ActivityManager:   0.1% 398/android.hardware.power-service.example: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 383/android.hardware.health@2.1-service: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 384/android.hardware.media.c2@1.0-service-goldfish: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 209/psimon: 0% user + 0% kernel
+10-10 07:14:36.313   584  3236 E ActivityManager:   0% 995/android.hardware.gnss@2.0-service.ranchu: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 408/gpuservice: 0% user + 0% kernel / faults: 1 minor
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 457/traced: 0% user + 0% kernel / faults: 1 minor 1 major
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 1400/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2 minor
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 1541/com.android.documentsui: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 16/rcu_exp_gp_kthr: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 32/kcompactd0: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 226/android.system.suspend@1.0-service: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 357/dhcpclient: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 387/android.hardware.power.stats@1.0-service.mock: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 470/storaged: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   0% 859/wpa_supplicant: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:  +0% 3347/cn.jiang.opennote: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:  +0% 3435/sh: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager: 99% TOTAL: 32% user + 60% kernel + 3.7% irq + 2.1% softirq
+10-10 07:14:36.320   584  3236 E ActivityManager: CPU usage from 3702ms to 19851ms later (2026-10-10 07:13:47.617 to 2026-10-10 07:14:03.766):
+10-10 07:14:36.320   584  3236 E ActivityManager:   43% 584/system_server: 12% user + 30% kernel / faults: 2673 minor 6 major
+10-10 07:14:36.320   584  3236 E ActivityManager:     17% 3236/AnrConsumer: 4.2% user + 13% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     6% 855/TaskSnapshotPer: 1.1% user + 4.9% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     6% 918/binder:584_6: 3.3% user + 2.7% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     3.5% 1491/binder:584_15: 1.5% user + 2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     1.2% 584/system_server: 0.2% user + 0.9% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     1.1% 606/android.ui: 0.4% user + 0.6% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.8% 673/SensorService: 0.2% user + 0.5% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.5% 802/WifiHandlerThre: 0.2% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.4% 799/NetworkStats: 0.1% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.4% 1133/binder:584_C: 0.2% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.2% 632/PowerManagerSer: 0.1% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 615/android.bg: 0% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 616/ActivityManager: 0% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 621/batterystats-ha: 0.1% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 623/bgres-controlle: 0% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 674/jobscheduler.bg: 0% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 685/AlarmManager: 0% user + 0.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.1% 807/WifiManagerThre: 0.1% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   63% 2355/cn.jiang.opennote: 13% user + 50% kernel / faults: 6093 minor 27 major
+10-10 07:14:36.320   584  3236 E ActivityManager:     46% 2504/roidJUnitRunner: 9.8% user + 36% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     10% 2855/pool-3-thread-1: 1.7% user + 8.4% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     5.8% 2362/Jit thread pool: 1.1% user + 4.6% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   14% 104/kswapd0: 0% user + 14% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   31% 3125/com.android.systemui: 8% user + 23% kernel / faults: 932 minor 28 major
+10-10 07:14:36.320   584  3236 E ActivityManager:     8.3% 3125/ndroid.systemui: 1.6% user + 6.6% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     4.5% 3315/SoundDecoder_1: 1.4% user + 3% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     3% 3132/HeapTaskDaemon: 0.4% user + 2.6% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.7% 3188/SysUiBg: 0% user + 0.7% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.2% 3134/FinalizerDaemon: 0% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.2% 3141/binder:3125_3: 0% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.2% 3191/pool-2-thread-1: 0% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.2% 3192/LogBuffer-Broad: 0% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3317/CCodecWatchdog: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3318/pool-4-thread-1: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3319/NDK MediaCodec_: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3320/NDK MediaCodec_: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3321/HwBinder:3125_1: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3334/NDK MediaCodec_: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   13% 3164/com.android.phone: 2.8% user + 10% kernel / faults: 895 minor
+10-10 07:14:36.320   584  3236 E ActivityManager:     8.9% 3164/m.android.phone: 1.8% user + 7.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     3.9% 3173/HeapTaskDaemon: 0.7% user + 3.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   4.3% 475/media.swcodec: 1.6% user + 2.6% kernel / faults: 48 minor 6 major
+10-10 07:14:36.320   584  3236 E ActivityManager:     1.4% 475/mediaswcodec: 0.5% user + 0.9% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.5% 904/HwBinder:475_4: 0% user + 0.5% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.4% 903/HwBinder:475_3: 0% user + 0.4% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:    +0% 3326/.vorbis.decoder: 0% user + 0% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   3.8% 388/android.hardware.sensors@2.1-service.multihal: 0.7% user + 3% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     3.4% 417/sensors@2.1-ser: 0.6% user + 2.8% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.4% 418/sensors@2.1-ser: 0.2% user + 0.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   2.2% 204/logd: 0.4% user + 1.7% kernel / faults: 8 minor
+10-10 07:14:36.320   584  3236 E ActivityManager:     1.6% 217/logd.writer: 0.4% user + 1.2% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.4% 479/logd.reader.per: 0% user + 0.4% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   1.7% 7/kworker/u4:0-kverityd: 0% user + 1.7% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   1.1% 13/rcu_preempt: 0% user + 1.1% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:   1.9% 467/media.extractor: 0.8% user + 1.1% kernel / faults: 11 minor
+10-10 07:14:36.320   584  3236 E ActivityManager:     1.2% 2467/binder:467_4: 0.4% user + 0.8% kernel
+10-10 07:14:36.320   584  3236 E ActivityManager:     0.5% 1269/binder:467_3: 0.2% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   1.9% 469/mediaserver: 0.4% user + 1.5% kernel / faults: 16 major
+10-10 07:14:36.332   584  3236 E ActivityManager:     1.6% 2707/binder:469_6: 0.2% user + 1.3% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 469/mediaserver: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   1.3% 370/kworker/u4:5-kverityd: 0% user + 1.3% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   1.7% 1490/com.android.providers.media.module: 0% user + 1.7% kernel / faults: 103 minor 3 major
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.6% 1498/Jit thread pool: 0% user + 0.6% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.6% 1933/AsyncTask #1: 0% user + 0.6% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.7% 206/servicemanager: 0.3% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   1.2% 472/libgoldfish-rild: 0.4% user + 0.8% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.8% 472/libgoldfish-ril: 0.2% user + 0.5% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.4% 510/libgoldfish-ril: 0.1% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   1% 1025/com.android.networkstack.process: 0.4% user + 0.6% kernel / faults: 35 minor
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.3% 1196/IpClient.wlan0: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.3% 3094/binder:1025_8: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 1025/rkstack.process: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 3276/Thread-28: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.4% 111/kworker/0:2-events: 0% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.5% 258/jbd2/dm-32-8: 0% user + 0.5% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.7% 382/android.hardware.graphics.composer@2.4-service: 0.3% user + 0.3% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.8% 420/display_0_vsync: 0.3% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.8% 459/logcat: 0.2% user + 0.5% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.4% 205/lmkd: 0% user + 0.3% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.4% 205/lmkd: 0% user + 0.3% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.6% 471/wificond: 0.4% user + 0.2% kernel / faults: 2 minor
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.8% 471/wificond: 0.4% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.9% 3123/kworker/1:1-virtio_vsock: 0% user + 0.9% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 1/init: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 159/init: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.3% 362/statsd: 0% user + 0.3% kernel / faults: 8 minor
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.2% 412/statsd.writer: 0% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.4% 468/media.metrics: 0.2% user + 0.1% kernel / faults: 1 minor
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.4% 468/mediametrics: 0.2% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.5% 1567/android.process.acore: 0.3% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 1567/d.process.acore: 0.1% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.6% 2259/app_process: 0.2% user + 0.4% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.2% 2354/binder:2259_2: 0% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 207/hwservicemanager: 0% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 209/psimon: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.2% 384/android.hardware.media.c2@1.0-service-goldfish: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.2% 933/HwBinder:384_4: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.2% 415/surfaceflinger: 0% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.2% 519/HwBinder:415_1: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 521/TimerDispatch: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.2% 454/adbd: 0% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0% 90/kworker/1:1H-kblockd: 0% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 363/netd: 0% user + 0.1% kernel / faults: 21 minor
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.1% 3284/Dns_102_1073: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:    +0% 3301/Dns_102_1073: 0% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:    +0% 3302/Dns_102_1073: 0% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:    +0% 3303/Dns_102_1073: 0% user + 0% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.1% 395/android.hardware.wifi@1.0-service: 0% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:     0.2% 395/wifi@1.0-servic: 0.1% user + 0.1% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager:   0.2% 3101/com.android.messaging: 0% user + 0.2% kernel
+10-10 07:14:36.332   584  3236 E ActivityManager: 100% TOTAL: 29% user + 64% kernel + 3.7% irq + 2.3% softirq
+10-10 07:14:41.664   584  3236 E ActivityManager: ANR in com.android.phone
+10-10 07:14:41.664   584  3236 E ActivityManager: PID: 3164
+10-10 07:14:41.664   584  3236 E ActivityManager: Reason: executing service com.android.ons/.OpportunisticNetworkService
+10-10 07:14:41.664   584  3236 E ActivityManager: ErrorId: 6a900fbf-ab5d-4f54-bf2c-43b6948fdad8
+10-10 07:14:41.664   584  3236 E ActivityManager: Frozen: false
+10-10 07:14:41.664   584  3236 E ActivityManager: Load: 0.0 / 0.0 / 0.0
+10-10 07:14:41.664   584  3236 E ActivityManager: ----- Output from /proc/pressure/memory -----
+10-10 07:14:41.664   584  3236 E ActivityManager: some avg10=0.65 avg60=1.71 avg300=1.04 total=6502040
+10-10 07:14:41.664   584  3236 E ActivityManager: full avg10=0.25 avg60=1.06 avg300=0.58 total=3655329
+10-10 07:14:41.664   584  3236 E ActivityManager: ----- End output from /proc/pressure/memory -----
+10-10 07:14:41.664   584  3236 E ActivityManager: 
+10-10 07:14:41.664   584  3236 E ActivityManager: CPU usage from 3872ms to -3374ms ago (2026-10-10 07:14:32.707 to 2026-10-10 07:14:39.954):
+10-10 07:14:41.664   584  3236 E ActivityManager:   45% 3347/cn.jiang.opennote: 24% user + 21% kernel / faults: 5184 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   34% 584/system_server: 12% user + 21% kernel / faults: 1411 minor 2 major
+10-10 07:14:41.664   584  3236 E ActivityManager:   22% 3164/com.android.phone: 9.8% user + 13% kernel / faults: 843 minor 2 major
+10-10 07:14:41.664   584  3236 E ActivityManager:   5.1% 415/surfaceflinger: 2.5% user + 2.5% kernel / faults: 351 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   4.4% 3125/com.android.systemui: 0.6% user + 3.7% kernel / faults: 63 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   3% 7/kworker/u4:0-kverityd: 0% user + 3% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   3.6% 388/android.hardware.sensors@2.1-service.multihal: 1.3% user + 2.2% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   2.7% 204/logd: 0.7% user + 2% kernel / faults: 38 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   2% 3101/com.android.messaging: 0.5% user + 1.5% kernel / faults: 33 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   1.9% 382/android.hardware.graphics.composer@2.4-service: 0.8% user + 1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   1.4% 459/logcat: 0.3% user + 1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   1.2% 469/mediaserver: 0% user + 1.2% kernel / faults: 5 major
+10-10 07:14:41.664   584  3236 E ActivityManager:   1% 472/libgoldfish-rild: 0.1% user + 0.8% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.7% 13/rcu_preempt: 0% user + 0.7% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.7% 206/servicemanager: 0.4% user + 0.3% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.9% 1567/android.process.acore: 0.1% user + 0.7% kernel / faults: 5 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.5% 111/kworker/0:2-events: 0% user + 0.5% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.6% 258/jbd2/dm-32-8: 0% user + 0.6% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.7% 467/media.extractor: 0.3% user + 0.3% kernel / faults: 9 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.6% 3123/kworker/1:1-virtio_vsock: 0% user + 0.6% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.4% 12/ksoftirqd/0: 0% user + 0.4% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.4% 207/hwservicemanager: 0.3% user + 0.1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.3% 363/netd: 0% user + 0.3% kernel / faults: 6 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.3% 1490/com.android.providers.media.module: 0.1% user + 0.1% kernel / faults: 7 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 24/ksoftirqd/1: 0% user + 0.1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 226/android.system.suspend@1.0-service: 0.1% user + 0% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 266/tombstoned: 0.1% user + 0% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 362/statsd: 0% user + 0.1% kernel / faults: 3 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 378/kworker/u4:6-kverityd: 0% user + 0.1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 381/android.hardware.graphics.allocator@3.0-service: 0% user + 0.1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 454/adbd: 0% user + 0.1% kernel / faults: 264 minor
+10-10 07:14:41.664   584  3236 E ActivityManager:   0.1% 471/wificond: 0% user + 0.1% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager:  +0% 3440/screencap: 0% user + 0% kernel
+10-10 07:14:41.664   584  3236 E ActivityManager: 99% TOTAL: 44% user + 50% kernel + 3.4% irq + 1.8% softirq
+10-10 07:14:41.664   584  3236 E ActivityManager: CPU usage from 823317ms to 823317ms ago (1970-01-01 07:00:00.000 to 1970-01-01 07:00:00.000) with 0% awake:
+10-10 07:14:41.664   584  3236 E ActivityManager: 0% TOTAL: 0% user + 0% kernel
+
